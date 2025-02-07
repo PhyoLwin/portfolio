@@ -1,0 +1,38 @@
+/* [project]/app/BgAnimation.css [app-client] (css) */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.desktop-video {
+  width: 100%;
+  height: 100%;
+}
+
+.mobile-video {
+  width: auto;
+  height: auto;
+  max-width: 100vw;
+  max-height: 100vh;
+  object-fit: contain;
+}
+
+@media (width <= 768px) {
+  .video {
+    object-fit: contain;
+  }
+}
+
+/*# sourceMappingURL=app_BgAnimation_b52d8e.css.map*/

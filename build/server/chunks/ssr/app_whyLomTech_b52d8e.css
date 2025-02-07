@@ -1,0 +1,137 @@
+/* [project]/app/whyLomTech.css [app-client] (css) */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOutLeft {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOutRight {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+.why-text-animation {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.why-text-animation span {
+  position: relative;
+  z-index: 10;
+}
+
+.why-text-animation:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #3c82f6;
+  border-radius: 4px;
+  transform: translateX(0);
+  opacity: 1;
+  z-index: 5;
+}
+
+.why-text-visible .why-text-animation:before {
+  animation: .6s forwards fadeInRight, .6s ease-in-out .6s forwards fadeOutLeft;
+}
+
+.why-sa-animation {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.why-sa-animation span {
+  position: relative;
+  z-index: 10;
+}
+
+.why-sa-animation:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 4px;
+  transform: translateX(100%);
+  opacity: 0;
+  z-index: 5;
+}
+
+.why-sa-visible .why-sa-animation:before {
+  animation: .6s forwards fadeInRight, .6s ease-in-out .6s forwards fadeOutRight;
+}
+
+.why-tt-animation {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.why-tt-animation span {
+  position: relative;
+  z-index: 10;
+}
+
+.why-tt-animation:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 4px;
+  transform: translateX(100%);
+  opacity: 0;
+  z-index: 5;
+}
+
+.why-tt-visible .why-tt-animation:before {
+  animation: .7s forwards fadeInLeft, .7s ease-in-out .7s forwards fadeOutRight;
+}
+
+/*# sourceMappingURL=app_whyLomTech_b52d8e.css.map*/

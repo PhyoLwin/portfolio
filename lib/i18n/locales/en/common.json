@@ -1,0 +1,171 @@
+{
+  "headerSlogan1": "The first step towards a beloved IT business,",
+  "headerSlogan2": "LOMTECH",
+  "lomtechsgreetings": "LOMTECH",
+  "headerSlogan3": "Innovation Expert",
+  "headerTagline": "Smart business partner for IT service development: Market validation, product development, marketing.",
+  "logoAlt": "LOMTECH Logo",
+  "whyLomtech": "WHY LOMTECH?",
+  "whyLomtech_title": "WHY LOMTECH",
+  "projectInquiry": "Project Inquiry",
+  "portfolios": "PORTFOLIO",
+  "partnersi": "PARTNERS",
+  "contactUs": "CONTACT US",
+  "sectionHeading": "A Partner in Your Success, a Journey We Take Together.",
+  "collaborate_with_lom_tech": "Collaborate with LOMTECH",
+  "whyLomTech": {
+    "default": {
+      "title": "Struggling with IT talent or Southeast Asia expansion",
+      "offerText": "LOMTECH offers a smarter solution.",
+      "connectText": "We connect Korean businesses with",
+      "highLightText": "top-notch IT professionals from     Myanmar, providing seamless offshore services, outsourced staff, and expert market entry strategies.",
+      "highLightText2": "",
+      "problemSolvedText": "Consider your problems solved. As your strategic partners in digital revolution ,"
+    },
+    "costEffective": {
+      "title": "Cost-Effective Solutions",
+      "point1Title": "Competitive Pricing 💰",
+      "point1Text": "Get top-notch quality without breaking the bank. We're talking serious savings (up to 40-50% compared to Vietnam!)",
+      "point2Title": "Efficient Operations 🚀",
+      "point2Text": "On time, on budget, and always exceeding expectations. We're project management experts."
+    },
+    "expertiseAndInnovation": {
+      "title": "Expertise and Innovation",
+      "point1Title": "Highly Skilled Team 🎯",
+      "point1Text": "Our team isn't just skilled; they're passionate tech gurus. Ready to tackle any challenge.",
+      "point2Title": "Korean Coordination ⚒️",
+      "point2Text": "Two decades of Southeast Asia IT experience? That's our founders. We know the region inside and out."
+    },
+    "clientCentricApproach": {
+      "title": "Client-Centric Approach",
+      "point1Title": "Personalised Service 👍",
+      "point1Text": "One size fits all? Not here. We tailor our solutions to your unique needs.",
+      "point2Title": "Dedicated Support 🤝",
+      "point2Text": "Need help? We're just a message, video call, or issue ticket away. Dedicated support from Korea and Myanmar."
+    },
+    "strategicLocation": {
+      "title": "Strategic Location",
+      "point1Title": "Korea Reach 🌍",
+      "point1Text": "Serving Korea with a diverse and talented team. We're where you need us to be.",
+      "point2Title": "Time Zone Advantage ⌚",
+      "point2Text": "Real-time collaboration? You bet. Our overlapping hours make communication a breeze."
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "years": {
+      "2017": "2017",
+      "2018": "2018",
+      "2019": "2019",
+      "2020": "2020",
+      "2021": "2021",
+      "2023": "2023",
+      "2024": "2024"
+    },
+    "projects": {
+      "client": "Client",
+      "location": "Location",
+      "project1": {
+        "title": "POS Laju Logistics Business Process Reengineering Consulting",
+        "client": "Post Office",
+        "location": "Malaysia"
+      },
+      "project2": {
+        "title": "Development of Extreme Adventure Travel Platform",
+        "client": "Axiago",
+        "location": "Malaysia"
+      },
+      "project3": {
+        "title": "POS Laju Parcel Logistics Tracking System Development and Operation",
+        "client": "Post Office",
+        "location": "Malaysia"
+      },
+      "project4": {
+        "title": "POS Laju Fulfillment System Development",
+        "client": "Post Office",
+        "location": "Malaysia"
+      },
+      "project5": {
+        "title": "Incident Management System Development and Maintenance",
+        "client": "Logit Global",
+        "location": "Malaysia"
+      },
+      "project6": {
+        "title": "Business English Learning App Development and Maintenance",
+        "client": "ITDA",
+        "location": "Myanmar"
+      },
+      "project7": {
+        "title": "Coding Education MVP App Development for Elementary Students",
+        "client": "Codehada",
+        "location": "South Korea"
+      },
+      "project8": {
+        "title": "Royal Malaysian Air Force Aircraft Maintenance Management System Development",
+        "client": "Royal Malaysian Air Force",
+        "location": "Malaysia"
+      },
+      "project9": {
+        "title": "Royal Malaysian Air Force Education Management and LMS Development",
+        "client": "Royal Malaysian Air Force",
+        "location": "Malaysia"
+      },
+      "project10": {
+        "title": "Coin Futures Trading Platform MVP Development and Maintenance",
+        "client": "Real Trading",
+        "location": "USA"
+      },
+      "project11": {
+        "title": "Goyang Environmental Energy Facility Post-Management System Reconstruction",
+        "client": "Goyang Environmental Energy Facility",
+        "location": "Korea"
+      },
+      "project12": {
+        "title": "Indonesia's New Capital Nusantara WTE Incineration Plant Operation and Management System Development",
+        "client": "The Ministry of Public Works and Housing",
+        "location": "Indonesia"
+      },
+      "project13": {
+        "title": "Norwegian Startup AI Meeting Notes App MeetNote MVP Development",
+        "client": "MeetNote",
+        "location": "Norway"
+      },
+      "project14": {
+        "title": "Developing a Location-Based Restaurant Recommendation System",
+        "client": "Tab Tab",
+        "location": "Malaysia"
+      },
+      "project15": {
+        "title": "Developing a Personalized Nutrition Recommendation System",
+        "client": "Healivery",
+        "location": "Malaysia"
+      },
+      "project16": {
+        "title": "Nachager Function Development and Maintenance",
+        "client": "Nachaer",
+        "location": "South Korea"
+      }
+    }
+  },
+  "partners": {
+    "title": "PARTNERS",
+    "description": " Introducing the clients who have created products with us.",
+    "partnerNames": {
+      "nacharger": "NaCharger",
+      "ms": "Microsoft",
+      "koreansocietyMalay": "Korean Society in Malaysia",
+      "hkgreen": "HK Green",
+      "okta": "Okta",
+      "mktech": "MK Tech"
+    }
+  },
+  "footer": {
+    "slogan": "Talent. Tech. Thrive in Goldenland",
+    "address": "6, SAMSEONG-RO, 103-GIL, GANGNAM-GU,\nSEOUL, REPUBLIC OF KOREA",
+    "tel": "Tel: +82-2-336-6777",
+    "fax": "Fax: +82-2-336-6779",
+    "business_registration": "Business Registration Number: 476-81-01694",
+    "rights_reserved": "All Right Reserved.",
+    "hr_slogan": "📩 Join our team"
+  }
+}

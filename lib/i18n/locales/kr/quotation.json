@@ -1,0 +1,128 @@
+{
+  "rightcolumn": {
+    "guide": "문의사항 안내",
+    "rightboxnote_one": "컨설팅을 의뢰해주시면 확인 후 최대한 빠르게 답변드릴 예정입니다.",
+    "rightboxnote_two": "전문가의 분석 및 상담 후 진행되며, 브랜드에 적절한 전략을 제안드립니다.",
+    "rightcheck_label": "개인정보 수집 · 이용하는데 동의합니다.",
+    "rightsummit_btn": "문의 제출"
+  },
+  "left": {
+    "head_one": "LOMTECH",
+    "head_two": "꼭 맞는 컨설팅이",
+    "head_note": "궁금하신가요?",
+    "title_inform": "정보 입력",
+    "flow_path": "유입 경로",
+    "inquiry": "문의사항",
+    "detailed_inquiry": "상세 문의"
+  },
+  "inform": {
+    "head": "의뢰인 정보를 알려주세요",
+    "note": "문의하신 사항에 회신드리기 위한 기본 정보를 작성해 주세요.",
+    "companyName": {
+      "label": "회사명",
+      "placeholder": "예시) 스마트 피킹"
+    },
+    "contact": {
+      "label": "연락처",
+      "placeholder": "예시) 스마트 피킨"
+    },
+    "email": {
+      "label": "이메일",
+      "placeholder": "예시) example@domain.com"
+    }
+  },
+  "flowpath": {
+    "head": "유입 경로를 선택해 주세요",
+    "note": "스마트픽킨을 어떻게 알게 되셨나요?",
+    "default": "유입 경로를 선택해 주세요",
+    "searchengine": "검색 엔진",
+    "social": "소셜 미디어",
+    "referral": "추천",
+    "advertisement": "광고",
+    "other": "다른"
+  },
+  "inquiry": {
+    "header": "문의사항",
+    "siteplace_label": "컨설팅을 받고 싶은 분야를 1개 이상 선택해주세요.",
+    "site": "사이트",
+    "place": "플레이스",
+    "url": "컨설팅 받고싶은 url주소를 작성해주세요",
+    "inputkeyword_label": "요청 키워드",
+    "inputkeyword_placeholder": "노출시키고 싶은 키워드를 입력해주세요. ex) 서면식당"
+  },
+  "detailinquiry": {
+    "header": "상세문의",
+    "placeholder": "귀하의 현재 상황과 궁금한 사항을 입력해 주세요."
+  },
+  "problems": {
+    "default": "유입 경로를 선택해 주세요",
+    "question": "현재 어떤 문제점을 해결하고자 IT 아웃소싱을 고려하고 계신가요? (Mandatory)",
+    "options": [
+      "IT 인력 부족 (특정 기술 인력 부족 포함)",
+      "높은 인건비 및 운영 비용 절감",
+      "핵심 사업에 집중하기 위한 IT 업무 부담 감소",
+      "최신 기술 도입 및 활용의 어려움",
+      "IT 시스템의 유지 보수 및 관리의 어려움",
+      "프로젝트의 빠른 진행 및 완료 필요",
+      "기타"
+    ]
+  },
+  "outcomes": {
+    "default": "유입 경로를 선택해 주세요",
+    "question": "이번 프로젝트를 통해 기대하는 가장 중요한 성과는 무엇인가요? (Mandatory)",
+    "options": [
+      "비용 절감",
+      "생산성 향상",
+      "업무 효율성 증대",
+      "서비스 품질 향상",
+      "시장 경쟁력 강화",
+      "새로운 시장 진출",
+      "기타"
+    ]
+  },
+  "resources": {
+    "default": "유입 경로를 선택해 주세요",
+    "question": "현재 내부 IT 리소스는 어떻게 구성되어 있으며, 아웃소싱을 통해 어떤 부분을 보완하고자 하시나요? (Mandatory)",
+    "options": [
+      "내부 IT 팀 보유",
+      "일부 IT 업무 외주 진행 중",
+      "내부 IT 리소스 없음",
+      "특정 기술 분야 인력 보충",
+      "프로젝트 단위 업무 수행",
+      "IT 시스템 유지 보수 및 관리",
+      "기타"
+    ]
+  },
+  "budget": {
+    "default": "유입 경로를 선택해 주세요",
+    "question": "프로젝트 예산에 대한 대략적인 계획이 있으신가요? (Mandatory)",
+    "options": [
+      "1천만원 이하",
+      "5천만원 이하",
+      "5천만원 ~ 1억원",
+      "1억원 ~ 3억원",
+      "3억원 이상",
+      "구체적인 예산은 미정이나, 대략적인 규모는 파악하고 있음",
+      "예산에 대한 계획은 아직 없음"
+    ]
+  },
+  "completion_date": {
+    "default": "유입 경로를 선택해 주세요",
+    "question": "프로젝트 완료를 희망하는 시점이 있으신가요? (Mandatory)",
+    "options": [
+      "1 개월 이내",
+      "3 개월 이내",
+      "1년 이내",
+      "1년 이상",
+      "구체적인 일정은 미정이나, 대략적인 시기는 파악하고 있음",
+      "일정에 대한 계획은 아직 없음"
+    ]
+  },
+  "experience": {
+    "question": "과거에 IT 아웃소싱 경험이 있으시다면, 어떤 점이 만족스러웠고 어떤 점이 아쉬웠는지 말씀해 주실 수 있나요?",
+    "sub_questions": {
+      "satisfied": "만족스러웠던 점",
+      "disappointed": "아쉬웠던 점"
+    }
+  }
+}

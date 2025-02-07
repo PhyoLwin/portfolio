@@ -1,0 +1,67 @@
+.glow-effect {
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+  }
+
+  to {
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.2);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.chat-bubble {
+  position: relative;
+  padding: 15px 20px;
+  border-radius: 15px;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.chat-bubble:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.chat-bubble.left {
+  background-color: #e8f0fe;
+  border: 1px solid #c7e0fe;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.chat-bubble.left:before {
+  border-right: 15px solid #e8f0fe;
+  left: -15px;
+}
+
+.chat-bubble.right {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.chat-bubble.right:before {
+  border-left: 15px solid #f0f0f0;
+  right: -15px;
+}
