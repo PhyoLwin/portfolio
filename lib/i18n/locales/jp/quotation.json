@@ -1,0 +1,127 @@
+{
+  "rightcolumn": {
+    "guide": "Inquiry Guide",
+    "rightboxnote_one": "If you request a consultation, we will review it and respond as quickly as possible.",
+    "rightboxnote_two": "After analysis and consultation with experts, we will suggest a strategy appropriate for your brand.",
+    "rightcheck_label": "Collection and use of personal information. I agree with that.",
+    "rightsummit_btn": "Submit an inquiry"
+  },
+  "left": {
+    "head_one": "LOMTECH",
+    "head_two": "Consulting That Fits You Perfectly",
+    "head_note": "Are you curious?",
+    "title_inform": "Enter Information",
+    "flow_path": "Inflow Path",
+    "inquiry": "Inquiry",
+    "detailed_inquiry": "For Detailed Inquiry"
+  },
+  "inform": {
+    "head": "Please Provide the Client Information",
+    "note": "Please fill in the basic information needed to respond to your inquiry.",
+    "companyName": {
+      "label": "Company Name",
+      "placeholder": "ex) LOMTech"
+    },
+    "contact": {
+      "label": "Contact",
+      "placeholder": "ex) 82 012 3456 7890"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "ex) example@domain.com"
+    }
+  },
+  "flowpath": {
+    "head": "Please Select the Inflow Path",
+    "note": "How did you find out about LOMTech?",
+    "default": "Please select an inflow path",
+    "searchengine": "Search Engine",
+    "social": "Social Media",
+    "referral": "Referral",
+    "advertisement": "Advertisement",
+    "other": "Other"
+  },
+  "inquiry": {
+    "header": "Inquiry",
+    "siteplace_label": "Please select at least one area in which you would like to receive consulting.",
+    "site": "Site",
+    "place": "Place",
+    "url": "Please enter the URL address you would like to receive consulting from.",
+    "inputkeyword_label": "Request Keyword",
+    "inputkeyword_placeholder": "Please enter the keyword you wish to be exposed to. ex) Written restaurant"
+  },
+  "detailinquiry": {
+    "header": "For Detailed Inquiry",
+    "placeholder": "Please enter your current situation and any questions you may have."
+  },
+  "problems": {
+    "default": "Please select a problem",
+    "question": "What specific problem are you trying to solve by considering IT outsourcing?",
+    "options": [
+      "IT staff shortage (including shortage of specific technical skills)",
+      "Reducing high labor and operating costs",
+      "Reducing the burden of IT tasks to focus on core business",
+      "Difficulty in adopting and utilizing the latest technologies",
+      "Difficulty in maintaining and managing IT systems",
+      "Need for rapid project progress and completion",
+      "Other"
+    ]
+  },
+  "outcomes": {
+    "default": "Please select outcome",
+    "question": "What is the most important outcome you expect from this project?",
+    "options": [
+      "Cost reduction",
+      "Productivity improvement",
+      "Increased work efficiency",
+      "Improved service quality",
+      "Strengthened market competitiveness",
+      "Entry into new markets",
+      "Other"
+    ]
+  },
+  "resources": {
+    "default": "Please select resources",
+    "question": "How are your internal IT resources currently structured, and what aspects do you hope to supplement through outsourcing?",
+    "options": [
+      "Own internal IT team",
+      "Some IT tasks are outsourced",
+      "No internal IT resources",
+      "Replenishment of personnel in specific technical fields",
+      "Project-based task execution",
+      "IT system maintenance and management",
+      "Other"
+    ]
+  },
+  "budget": {
+    "default": "Please select budget",
+    "question": "Do you have a rough plan for the project budget?",
+    "options": [
+      "Under ₩10 million",
+      "Under ₩50 million",
+      "₩50 million ~ ₩100 million",
+      "₩100 million ~ ₩300 million",
+      "Over ₩300 million",
+      "Specific budget is not yet determined, but the approximate scale is known",
+      "No plans for the budget yet"
+    ]
+  },
+  "completion_date": {
+    "default": "Please select completion date",
+    "question": "Is there a desired completion date for the project?",
+    "options": [
+      "Within a month",
+      "Within three months",
+      "Within a year",
+      "Over a year",
+      "Specific schedule is not yet determined, but the approximate timing is known"
+    ]
+  },
+  "experience": {
+    "question": "If you have previous experience with IT outsourcing, could you tell us what you were satisfied with and what you found disappointing?",
+    "sub_questions": {
+      "satisfied": "Satisfied with",
+      "disappointed": "Disappointed with"
+    }
+  }
+}

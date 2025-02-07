@@ -1,0 +1,106 @@
+{
+  "headerSlogan1": "愛されるITビジネスへの第一歩、",
+  "headerSlogan2": "LOMTECH",
+  "lomtechsgreetings": "LOMTECH",
+  "headerSlogan3": "イノベーションのエキスパート",
+  "headerTagline": "ITサービス開発のスマートビジネスパートナー：市場検証、製品開発、マーケティング。",
+  "logoAlt": "LOMTECHロゴ",
+  "whyLomtech": "なぜLOMTECH?",
+  "whyLomtech_title": "なぜLOMTECH?",
+  "projectInquiry": "プロジェクトお問い合わせ",
+  "portfolios": "ポートフォリオ",
+  "partnersi": "パートナー",
+  "contactUs": "お問い合わせ",
+  "sectionHeading": "成功へのパートナー、一緒に歩む旅。",
+  "collaborate_with_lom_tech": "LOMTECHと協力する",
+  "whyLomTech": {
+    "default": {
+      "title": "IT人材や東南アジア進出に苦労していませんか？",
+      "offerText": "LOMTECHがよりスマートな解決策を提供します。",
+      "connectText": "韓国企業と",
+      "highLightText": "ミャンマーのトップレベルのIT専門家をつなぎ、シームレスなオフショアサービス、アウトソーシングスタッフ、専門的な市場参入戦略を提供します。",
+      "highLightText2": "",
+      "problemSolvedText": "デジタル革命の戦略的パートナーとして、問題解決をお手伝いします。"
+    },
+    "costEffective": {
+      "title": "コスト効率の高いソリューション",
+      "point1Title": "競争力のある価格 💰",
+      "point1Text": "高品質をリーズナブルな価格で提供。ベトナムと比較して最大40〜50％の節約が可能！",
+      "point2Title": "効率的な運用 🚀",
+      "point2Text": "納期厳守、予算内、そして期待以上の成果。プロジェクト管理のエキスパートです。"
+    },
+    "expertiseAndInnovation": {
+      "title": "専門知識とイノベーション",
+      "point1Title": "高度なスキルを持つチーム 🎯",
+      "point1Text": "私たちのチームは単なる技術者ではなく、情熱的なテックのプロフェッショナルです。",
+      "point2Title": "韓国のコーディネーション ⚒️",
+      "point2Text": "東南アジアで20年以上のIT経験を持つ創業者が率いるチーム。地域の市場を知り尽くしています。"
+    },
+    "clientCentricApproach": {
+      "title": "顧客中心のアプローチ",
+      "point1Title": "パーソナライズされたサービス 👍",
+      "point1Text": "一律のソリューションは提供しません。お客様のニーズに合わせた対応をいたします。",
+      "point2Title": "専属サポート 🤝",
+      "point2Text": "問題があればすぐ対応。メッセージ、ビデオ通話、サポートチケットで、韓国とミャンマーから専属サポートを提供。"
+    },
+    "strategicLocation": {
+      "title": "戦略的な立地",
+      "point1Title": "韓国市場への対応 🌍",
+      "point1Text": "多様で優秀なチームが韓国市場をサポートします。",
+      "point2Title": "時差の利点 ⌚",
+      "point2Text": "リアルタイムのコラボレーションが可能。重なる時間帯が多く、スムーズなコミュニケーションを実現。"
+    }
+  },
+  "portfolio": {
+    "title": "ポートフォリオ",
+    "years": {
+      "2017": "2017年",
+      "2018": "2018年",
+      "2019": "2019年",
+      "2020": "2020年",
+      "2021": "2021年",
+      "2023": "2023年",
+      "2024": "2024年"
+    },
+    "projects": {
+      "client": "クライアント",
+      "location": "所在地",
+      "project1": {
+        "title": "POS Laju物流業務改革コンサルティング",
+        "client": "郵便局",
+        "location": "マレーシア"
+      },
+      "project2": {
+        "title": "エクストリームアドベンチャートラベルプラットフォーム開発",
+        "client": "Axiago",
+        "location": "マレーシア"
+      },
+      "project3": {
+        "title": "POS Laju宅配物流追跡システム開発と運用",
+        "client": "郵便局",
+        "location": "マレーシア"
+      }
+    }
+  },
+  "partners": {
+    "title": "パートナー",
+    "description": "私たちと共に製品を生み出したクライアントのご紹介。",
+    "partnerNames": {
+      "nacharger": "NaCharger",
+      "ms": "マイクロソフト",
+      "koreansocietyMalay": "マレーシア韓国協会",
+      "hkgreen": "HK Green",
+      "okta": "Okta",
+      "mktech": "MK Tech"
+    }
+  },
+  "footer": {
+    "slogan": "才能。テクノロジー。ゴールデンランドで成功を。",
+    "address": "6, SAMSEONG-RO, 103-GIL, GANGNAM-GU,\nSEOUL, REPUBLIC OF KOREA",
+    "tel": "電話: +82-2-336-6777",
+    "fax": "ファックス: +82-2-336-6779",
+    "business_registration": "事業登録番号: 476-81-01694",
+    "rights_reserved": "All Rights Reserved.",
+    "hr_slogan": "📩 チームに参加しませんか？"
+  }
+}

@@ -1,0 +1,99 @@
+nav .nav-link {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  transition:
+    color 0.3s ease,
+    font-size 0.3s ease,
+    font-weight 0.3s ease;
+}
+
+nav .nav-link:hover {
+  color: #89d1d0 !important;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.nav-link-custom {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.nav-link-custom {
+  margin: 0 24px; /* Centered margin adjustment */
+}
+
+.nav-link:hover ~ .nav-link,
+.nav-link:has(~ .nav-link:hover) {
+  color: grey;
+}
+
+/* Navbar section items dropdown menu for mobile view */
+
+.menu-dropdown {
+  position: absolute;
+  right: 20px;
+  width: 200px;
+  max-height: 250px;
+  margin-top: -15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 10px 15px;
+  transition: all 0.3s ease; /* Smooth transition */
+  z-index: 10;
+}
+
+.menu-dropdown button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 5px 5px;
+  color: #333;
+  font-weight: bold;
+  border: none;
+  background: none;
+  /* Transition for hover */
+}
+
+.menu-dropdown button:hover {
+  background-color: #f0f0f0;
+  color: #007bff;
+}
+
+/* proejct inquiry button for mobile and Tablet view */
+
+.projectbtn {
+  position: fixed;
+  z-index: 50;
+}
+
+.btnbottom {
+  bottom: 1rem; /* 16px */
+}
+
+.btnright {
+  right: 1rem; /* 16px */
+}
+
+@media (max-width: 1024px) {
+  .nav-link-custom {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-link-custom {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-link-custom {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}

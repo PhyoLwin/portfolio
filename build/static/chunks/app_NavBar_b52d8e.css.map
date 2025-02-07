@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/app/NavBar.css"],"sourcesContent":["nav .nav-link {\n  position: relative;\n  color: white;\n  text-decoration: none;\n  font-size: 1.2rem;\n  font-weight: 400;\n  transition: color 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease;\n}\n\nnav .nav-link:hover {\n  color: #89d1d0!important;\n  font-size: 1.4rem;\n  font-weight: 700;\n}\n.nav-link-custom {\n  margin-left: 24px;\n  margin-right: 24px;\n}\n\n.nav-link:hover ~.nav-link, .nav-link:has(~.nav-link:hover) {\n  color: grey;\n}\n"],"names":[],"mappings":"AAAA;;;;;;;;;AASA;;;;;;AAKA;;;;;AAKA"}},
+    {"offset": {"line": 24, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

@@ -1,0 +1,171 @@
+{
+  "headerSlogan1": "사랑받는 IT 비즈니스를 향한 첫 스텝,",
+  "headerSlogan2": "디지털 혁명을 위한 전략적 파트너, 롬테크.",
+  "lomtechsgreetings": "롬테크",
+  "headerSlogan3": "혁신 전문가",
+  "headerTagline": "IT 서비스 개발을 위한 스마트한 비즈니스 파트너: 시장 검증, 제품 개발, 마케팅.",
+  "whyLomtech": "롬테크는?",
+  "whyLomtech_title": "롬테크를 소개합니다.",
+  "projectInquiry": "프로젝트 문의",
+  "sectionHeading": "성공을 함께 만들어가는 파트너, 오랜 동행을 함께합니다.",
+  "collaborate_with_lom_tech": "롬테크와 함께",
+  "whyLomTech": {
+    "default": {
+      "title": "IT 인재 부족이나 동남아시아 확장으로 어려움을 겪고 계신가요?",
+      "offerText": "롬테크가 더 스마트한 솔루션을 제공합니다.",
+      "connectText": "한국 기업과 미얀마 최고의 IT 전문가를 연결하여 ",
+      "highLightText": "원활한 해외 서비스, 인력 아웃소싱, 전문적인 시장 진출 전략",
+      "highLightText2": "을 제공합니다.",
+      "problemSolvedText": "이제 고민은 끝났습니다.  "
+    },
+    "costEffective": {
+      "title": "비용 효율적인 솔루션",
+      "point1Title": "경쟁력 있는 가격 💰 ",
+      "point1Text": "은행 잔고 걱정 없이 최고의 품질을 누리세요. (베트남 대비 최대 40-50% 절감!)",
+      "point2Title": "효율적인 운영 🚀 ",
+      "point2Text": "정시, 예산 준수, 그리고 항상 기대 이상. 저희는 프로젝트 관리의 달인입니다."
+    },
+    "expertiseAndInnovation": {
+      "title": "전문성과 혁신",
+      "point1Title": "뛰어난 기술력을 갖춘 팀 🎯 ",
+      "point1Text": "저희 팀은 실력뿐 아니라 열정으로 가득 찬 기술 전문가입니다. 어떤 도전이든 맞설 준비가 되어 있습니다.",
+      "point2Title": "한국인 협력 체계 ⚒️",
+      "point2Text": "동남아시아 IT 업계 20년 경력? 바로 저희 창립자들의 이력입니다. 이 지역에 대해 속속들이 꿰뚫고 있습니다."
+    },
+    "clientCentricApproach": {
+      "title": "고객 중심 접근 방식",
+      "point1Title": "맞춤형 서비스 👍 ",
+      "point1Text": "모두에게 똑같은 서비스? 저희에겐 통하지 않습니다. 고객님의 고유한 니즈에 맞춰 솔루션을 맞춤 제작합니다.",
+      "point2Title": "전담 지원 🤝 ",
+      "point2Text": "도움이 필요하세요? Slack 메시지, Zoom 통화, Jira 티켓 하나면 됩니다. 한국과 미얀마에서 전담 지원을 제공합니다."
+    },
+    "strategicLocation": {
+      "title": "전략적 위치",
+      "point1Title": "한국과의 접근성 🌍 ",
+      "point1Text": "다양하고 유능한 팀으로 한국에 서비스를 제공합니다. 필요한 곳 어디든 함께합니다.",
+      "point2Title": "시간대 이점 ⌚ ",
+      "point2Text": "실시간 협업? 당연하죠. 겹치는 업무 시간 덕분에 소통이 매우 편리합니다."
+    }
+  },
+  "portfolios": "포트폴리오",
+  "partnersi": "파트너",
+  "contactUs": "문의하기",
+  "logoAlt": "롬테크 로고",
+  "portfolio": {
+    "title": "포트폴리오",
+    "years": {
+      "2017": "2017년",
+      "2018": "2018년",
+      "2019": "2019년",
+      "2020": "2020년",
+      "2021": "2021년",
+      "2023": "2023년",
+      "2024": "2024년"
+    },
+    "projects": {
+      "client": "클라이언트",
+      "location": "위치",
+      "project1": {
+        "title": "POS Laju 물류 비즈니스 프로세스 재설계 컨설팅",
+        "client": "우체국",
+        "location": "말레이시아"
+      },
+      "project2": {
+        "title": "Extreme Adventure 여행 플랫폼 개발",
+        "client": "Axiago",
+        "location": "말레이시아"
+      },
+      "project3": {
+        "title": "POS Laju 소포 물류 추적 시스템 개발 및 운영",
+        "client": "우체국",
+        "location": "말레이시아"
+      },
+      "project4": {
+        "title": "POS Laju 이행 시스템 개발",
+        "client": "우체국",
+        "location": "말레이시아"
+      },
+      "project5": {
+        "title": "Incident Management System 개발 및 유지보수",
+        "client": "Logit Global",
+        "location": "말레이시아"
+      },
+      "project6": {
+        "title": "Business English Learning App 개발 및 유지보수",
+        "client": "ITDA",
+        "location": "미얀마"
+      },
+      "project7": {
+        "title": "초등학생을 위한 코딩 교육 MVP 앱 개발",
+        "client": "Codehada",
+        "location": "대한민국"
+      },
+      "project8": {
+        "title": "Royal Malaysian Air Force 항공기 유지 보수 관리 시스템 개발",
+        "client": "Royal Malaysian Air Force",
+        "location": "말레이시아"
+      },
+      "project9": {
+        "title": "Royal Malaysian Air Force 교육 관리 및 LMS 개발",
+        "client": "Royal Malaysian Air Force",
+        "location": "말레이시아"
+      },
+      "project10": {
+        "title": "Coin Futures Trading Platform MVP 개발 및 유지보수",
+        "client": "Real Trading",
+        "location": "미국"
+      },
+      "project11": {
+        "title": "고양 환경 에너지 시설 포스트 관리 시스템 재구축",
+        "client": "고양 환경 에너지 시설",
+        "location": "대한민국"
+      },
+      "project12": {
+        "title": "인도네시아의 새로운 수도 누산타라 WTE 소각장 운영 및 관리 시스템 개발",
+        "client": "공공 주택 부서",
+        "location": "인도네시아"
+      },
+      "project13": {
+        "title": "노르웨이 스타트업 AI 회의 노트 앱 MeetNote MVP 개발",
+        "client": "MeetNote",
+        "location": "노르웨이"
+      },
+      "project14": {
+        "title": "위치 기반 레스토랑 추천 시스템 개발",
+        "client": "Tab Tab",
+        "location": "말레이시아"
+      },
+      "project15": {
+        "title": "개인별 맞춤 영양제 추천 시스템 개발",
+        "client": "Healivery",
+        "location": "말레이시아"
+      },
+      "project16": {
+        "title": "나차저 기능 개발 및 유지보수",
+        "client": "Nachaer",
+        "location": "South Korea"
+      }
+    }
+  },
+  "partners": {
+    "title": "파트너",
+    "description": "LomTech와 함께 제품을 만든 고객사를 소개합니다.",
+    "partnerNames": {
+      "nacharger": "나차저",
+      "ms": "마이크로소프트",
+      "koreansocietyMalay": "말레이시아 한국사회",
+      "hkgreen": "HK 그린",
+      "okta": "옥타",
+      "mktech": "MK 테크"
+    }
+  },
+  "footer": {
+    "slogan": "Talent. Tech. Thrive in Goldenland",
+    "address": "서울특별시 강남구 삼성로103길 6",
+    "tel": "전화: 02-336-6777",
+    "fax": "팩스: 02-336-6779",
+    "business_registration": "사업자등록번호: 476-81-01694",
+    "rights_reserved": "모든 권리 보유.",
+    "hr_slogan": "📩 우리 팀에 합류하세요"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/app/BgAnimation.css"],"sourcesContent":[".video-container {\n  position: relative;\n  width: 100%;\n  height: 100vh;\n  overflow: hidden;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.video {\n  position: absolute;\n  top: 0;\n  left: 0;\n  object-fit: cover;\n}\n\n.desktop-video {\n  width: 100%;\n  height: 100%;\n}\n\n.mobile-video {\n  width: auto;\n  height: auto;\n  max-width: 100vw;\n  max-height: 100vh;\n  object-fit: contain;\n}\n\n@media (max-width: 768px) {\n  .video {\n    object-fit: contain;\n  }\n}\n"],"names":[],"mappings":"AAAA;;;;;;;;;;AAUA;;;;;;;AAOA;;;;;AAKA;;;;;;;;AAQA;EACE"}},
+    {"offset": {"line": 36, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
