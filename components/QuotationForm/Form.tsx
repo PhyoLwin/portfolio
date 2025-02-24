@@ -1,13 +1,13 @@
-'use client';
-import { FC, useEffect, useState } from 'react';
-import { LeftColumn } from './LeftColumn';
-import { RightColumn } from './RightColumn';
-import { Formik, Form as FormikForm } from 'formik';
-import { QuotationFormFields, validationSchema } from '@/lib/validationSchema';
-import { Language } from '@/lib/i18n/settings';
-import { IntersectionOptions, useInView } from 'react-intersection-observer';
-import { sendEmail } from '@/lib/sendEmail';
-import { Toast } from './Toast';
+"use client";
+import { FC, useEffect, useState } from "react";
+import { LeftColumn } from "./LeftColumn";
+import { RightColumn } from "./RightColumn";
+import { Formik, Form as FormikForm } from "formik";
+import { QuotationFormFields, validationSchema } from "@/lib/validationSchema";
+import { Language } from "@/lib/i18n/settings";
+import { IntersectionOptions, useInView } from "react-intersection-observer";
+import { sendEmail } from "@/lib/sendEmail";
+import { Toast } from "./Toast";
 
 interface Props {
   lng: Language;
@@ -15,17 +15,17 @@ interface Props {
 
 export const QuotationForm: FC<Props> = ({ lng }) => {
   const formData: QuotationFormFields = {
-    companyName: '',
-    contact: '',
-    email: '',
-    inflowPath: '',
-    problems: '',
-    outcomes: '',
-    resources: '',
-    budget: '',
-    completion_date: '',
-    satisfied: '',
-    disappointed: '',
+    companyName: "",
+    contact: "",
+    email: "",
+    inflowPath: "",
+    problems: "",
+    outcomes: "",
+    resources: "",
+    budget: "",
+    completion_date: "",
+    satisfied: "",
+    disappointed: "",
     privacy: false,
   };
 

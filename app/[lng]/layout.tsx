@@ -1,8 +1,8 @@
-import { Footer } from '@/components/Footer';
-import { NavBar } from '@/components/Navbar';
-import { getTranslation } from '@/lib/i18n';
-import { Language } from '@/lib/i18n/settings';
-import { ReactNode } from 'react';
+import { Footer } from "@/components/Footer";
+import { NavBar } from "@/components/Navbar";
+import { getTranslation } from "@/lib/i18n";
+import { Language } from "@/lib/i18n/settings";
+import { ReactNode } from "react";
 
 export default async function Layout({
   children,
@@ -12,7 +12,7 @@ export default async function Layout({
   params: Promise<{ lng: Language }>;
 }>) {
   const { lng } = await params;
-  const { t } = await getTranslation(lng, 'common');
+  const { t } = await getTranslation(lng, "common");
 
   return (
     <>

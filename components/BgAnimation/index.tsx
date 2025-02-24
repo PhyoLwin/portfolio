@@ -1,18 +1,18 @@
-'use client';
+"use client";
 
-import React, { ReactEventHandler, useEffect, useState } from 'react';
-import { ArrowBounce } from './ArrowBounce';
-import '@/app/NavBar.css';
+import React, { ReactEventHandler, useEffect, useState } from "react";
+import { ArrowBounce } from "./ArrowBounce";
+import "@/app/NavBar.css";
 
 export const BgAnimation: React.FC = () => {
-  const arrowImage = '/images/arrow.png';
-  const desktopVideoFile = '/videos/landing.mp4';
-  const mobileVideoFile = '/videos/mobile.mp4';
+  const arrowImage = "/images/arrow.png";
+  const desktopVideoFile = "/videos/landing.mp4";
+  const mobileVideoFile = "/videos/mobile.mp4";
   const [isMobile, setIsMobile] = useState(false);
   const [isPortrait, setIsPortrait] = useState(false);
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
+    if (typeof window !== "undefined") {
       const handleResizeAndOrientation = () => {
         setIsMobile(window.innerWidth <= 768);
         setIsPortrait(window.innerHeight > window.innerWidth);
@@ -20,13 +20,13 @@ export const BgAnimation: React.FC = () => {
 
       handleResizeAndOrientation();
 
-      window.addEventListener('resize', handleResizeAndOrientation);
-      window.addEventListener('orientationchange', handleResizeAndOrientation);
+      window.addEventListener("resize", handleResizeAndOrientation);
+      window.addEventListener("orientationchange", handleResizeAndOrientation);
 
       return () => {
-        window.removeEventListener('resize', handleResizeAndOrientation);
+        window.removeEventListener("resize", handleResizeAndOrientation);
         window.removeEventListener(
-          'orientationchange',
+          "orientationchange",
           handleResizeAndOrientation,
         );
       };
@@ -34,9 +34,9 @@ export const BgAnimation: React.FC = () => {
   }, []);
 
   const scrollToSection = () => {
-    const section = document.getElementById('whylomtech');
+    const section = document.getElementById("whylomtech");
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+      section.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -48,13 +48,13 @@ export const BgAnimation: React.FC = () => {
 
   const handleVideoError: ReactEventHandler<HTMLVideoElement> = (event) => {
     const video = event.currentTarget;
-    video.src = '/videos/default.mp4';
+    video.src = "/videos/default.mp4";
   };
 
   return (
     <div
       id="animation"
-      className={`video-container ${isPortrait ? 'portrait' : ''}`}
+      className={`video-container ${isPortrait ? "portrait" : ""}`}
     >
       <video
         className="video"

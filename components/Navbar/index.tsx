@@ -1,20 +1,20 @@
-'use client';
+"use client";
 
-import { FC, useEffect, useState, useRef } from 'react';
-import { usePathname, useRouter } from 'next/navigation';
-import { ProjectInquiryButton } from './ProjectInquiryButton';
-import { LanguageDropdown } from './LanguageDropdown';
-import '@/app/NavBar.css';
-import { Language } from '@/lib/i18n/settings';
-import { useTranslation } from '@/lib/i18n/client';
-import { CiMenuBurger } from 'react-icons/ci';
+import { FC, useEffect, useState, useRef } from "react";
+import { usePathname, useRouter } from "next/navigation";
+import { ProjectInquiryButton } from "./ProjectInquiryButton";
+import { LanguageDropdown } from "./LanguageDropdown";
+import "@/app/NavBar.css";
+import { Language } from "@/lib/i18n/settings";
+import { useTranslation } from "@/lib/i18n/client";
+import { CiMenuBurger } from "react-icons/ci";
 
 interface Props {
   lng: Language;
 }
 
 export const NavBar: FC<Props> = ({ lng }) => {
-  const { t } = useTranslation(lng, 'common');
+  const { t } = useTranslation(lng, "common");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
@@ -22,20 +22,20 @@ export const NavBar: FC<Props> = ({ lng }) => {
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+      section.scrollIntoView({ behavior: "smooth" });
     }
     setIsMenuOpen(false);
   };
 
   const handleProjectInquiryClick = () => {
-    router.push('/quotation');
+    router.push("/quotation");
   };
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const isQuotationPage = pathname.endsWith('/quotation');
+  const isQuotationPage = pathname.endsWith("/quotation");
 
   //Project inquiry button hide the quotation form
   const renderProjectInquiryButton = () => {
@@ -45,7 +45,7 @@ export const NavBar: FC<Props> = ({ lng }) => {
           onClick={handleProjectInquiryClick}
           variant="primary"
         >
-          {t('projectInquiry')}
+          {t("projectInquiry")}
         </ProjectInquiryButton>
       )
     );
@@ -58,7 +58,7 @@ export const NavBar: FC<Props> = ({ lng }) => {
       if (menuRef.current && event.currentTarget) {
         if (!menuRef.current.contains(event.currentTarget as HTMLElement)) {
           scrollToSection(
-            (event.target as HTMLElement).getAttribute('data-scroll') as string,
+            (event.target as HTMLElement).getAttribute("data-scroll") as string,
           );
         }
 
@@ -66,9 +66,9 @@ export const NavBar: FC<Props> = ({ lng }) => {
       }
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
   return (
@@ -78,38 +78,38 @@ export const NavBar: FC<Props> = ({ lng }) => {
           {!isQuotationPage && (
             <div className="hidden flex-grow items-center justify-center md:flex">
               <button
-                onClick={() => scrollToSection('whylomtech')}
+                onClick={() => scrollToSection("whylomtech")}
                 className="nav-link nav-link-custom"
               >
-                {t('whyLomtech')}
+                {t("whyLomtech")}
               </button>
 
               <button
-                onClick={() => scrollToSection('portfolio')}
+                onClick={() => scrollToSection("portfolio")}
                 className="nav-link nav-link-custom"
               >
-                {t('portfolios')}
+                {t("portfolios")}
               </button>
 
               <button
-                onClick={() => scrollToSection('partners')}
+                onClick={() => scrollToSection("partners")}
                 className="nav-link nav-link-custom"
               >
-                {t('partnersi')}
+                {t("partnersi")}
               </button>
 
               <button
-                onClick={() => scrollToSection('contact')}
+                onClick={() => scrollToSection("contact")}
                 className="nav-link nav-link-custom"
               >
-                {t('contactUs')}
+                {t("contactUs")}
               </button>
               <div className="ml-4">
                 <ProjectInquiryButton
                   onClick={handleProjectInquiryClick}
                   variant="primary"
                 >
-                  {t('projectInquiry')}
+                  {t("projectInquiry")}
                 </ProjectInquiryButton>
               </div>
             </div>
@@ -134,27 +134,27 @@ export const NavBar: FC<Props> = ({ lng }) => {
               data-scroll="whylomtech"
               className="nav-link nav-link-custom"
             >
-              {t('whyLomtech')}
+              {t("whyLomtech")}
             </button>
 
             <button
               data-scroll="portfolio"
               className="nav-link nav-link-custom"
             >
-              {t('portfolios')}
+              {t("portfolios")}
             </button>
 
             <button data-scroll="partners" className="nav-link nav-link-custom">
-              {t('partnersi')}
+              {t("partnersi")}
             </button>
             <button data-scroll="contact" className="nav-link nav-link-custom">
-              {t('contactUs')}
+              {t("contactUs")}
             </button>
           </div>
         )}
       </nav>
       {/* Project Inquiry Button for Mobile and Tablet Views */}
-      <div className="projectbtn btnbottom btnright md:hidden">
+      <div className="projectbtn btnbottom  btnright md:hidden">
         {renderProjectInquiryButton()}
       </div>
     </>

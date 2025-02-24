@@ -1,5 +1,5 @@
-import { ErrorMessage as FormikErrorMessagge } from 'formik';
-import { FC } from 'react';
+import { ErrorMessage as FormikErrorMessagge } from "formik";
+import { FC } from "react";
 
 interface Props {
   name: string;

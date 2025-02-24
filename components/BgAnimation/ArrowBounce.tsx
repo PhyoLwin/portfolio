@@ -1,6 +1,6 @@
 // components/ArrowBounce.tsx
-import { StaticImageData } from 'next/image';
-import React from 'react';
+import { StaticImageData } from "next/image";
+import React from "react";
 
 interface ArrowBounceProps {
   arrowImage: string | StaticImageData;

@@ -1,4 +1,4 @@
-import { TRANSPORTER } from '@/lib/nodemailer';
+import { TRANSPORTER } from "@/lib/nodemailer";
 
 export async function POST(req: Request) {
   const {
@@ -21,7 +21,7 @@ export async function POST(req: Request) {
   const mailOptions = {
     from: process.env.NEXT_PUBLIC_EMAIL_USERNAME,
     to: process.env.NEXT_PUBLIC_RECIPIENT_EMAIL,
-    subject: 'New Quotation Request',
+    subject: "New Quotation Request",
     text: `
 Company Name: ${companyName}
 Contact: ${contact}
@@ -58,19 +58,19 @@ ${disappointed}
     // Send mail
     await TRANSPORTER.sendMail(mailOptions);
     return new Response(
-      JSON.stringify({ message: 'Email sent successfully' }),
+      JSON.stringify({ message: "Email sent successfully" }),
       {
         status: 200,
-        headers: { 'Content-Type': 'application/json' },
+        headers: { "Content-Type": "application/json" },
       },
     );
   } catch (error) {
     console.error(error);
     return new Response(
-      JSON.stringify({ message: 'Error sending email', error }),
+      JSON.stringify({ message: "Error sending email", error }),
       {
         status: 500,
-        headers: { 'Content-Type': 'application/json' },
+        headers: { "Content-Type": "application/json" },
       },
     );
   }

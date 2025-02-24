@@ -1,5 +1,5 @@
-import { Field } from 'formik';
-import { FC } from 'react';
+import { Field } from "formik";
+import { FC } from "react";
 
 interface Props {
   name: string;

@@ -1,5 +1,5 @@
-import { Dispatch, FC, ReactNode, SetStateAction, useEffect } from 'react';
-import { FaXmark } from 'react-icons/fa6';
+import { Dispatch, FC, ReactNode, SetStateAction, useEffect } from "react";
+import { FaXmark } from "react-icons/fa6";
 
 interface Props {
   show: boolean;
@@ -21,7 +21,7 @@ export const Toast: FC<Props> = ({ show, setShow, text, className }) => {
   return (
     show && (
       <div
-        className={`${!show ? 'hidden' : ''} flex min-h-14 min-w-52 items-center justify-between gap-5 rounded-2xl border border-black bg-white p-5 ${className}`}
+        className={`${!show ? "hidden" : ""} flex min-h-14 min-w-52 items-center justify-between gap-5 rounded-2xl border border-black bg-white p-5 ${className}`}
       >
         {text}
         <button

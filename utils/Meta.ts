@@ -1,27 +1,27 @@
-import type { Metadata } from 'next';
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'LOMTech',
+  title: "Phyo Pyae Pyae Lwin",
   description:
-    'LomTech - Leading Technology Solutions for Your Business Growth. We specialize in innovative IT services and customized tech solutions.',
+    " web developer and AI engineer specializing in HTML, CSS, JavaScript frameworks, and artificial intelligence. Currently pursuing a Computer Science degree at Yangon University and freelancing on innovative projects.",
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon.ico',
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
   },
   openGraph: {
-    title: 'LomTech - Leading Technology Solutions',
+    title: "LomTech - Leading Technology Solutions",
     description:
-      'Explore how LomTech provides cutting-edge tech solutions tailored to your business needs. From software development to IT services, we help businesses grow.',
-    url: 'https://new-fe.lomtech.net/',
-    type: 'website',
+      "Explore how LomTech provides cutting-edge tech solutions tailored to your business needs. From software development to IT services, we help businesses grow.",
+    url: "https://new-fe.lomtech.net/",
+    type: "website",
     images: [
       {
-        url: 'https://new-fe.lomtech.net/static/media/logo.8089a53b183884681218.png',
-        alt: 'LomTech Logo',
+        url: "https://new-fe.lomtech.net/static/media/logo.8089a53b183884681218.png",
+        alt: "LomTech Logo",
       },
     ],
     // site_name: 'LomTech',
-    locale: 'en_US',
+    locale: "en_US",
   },
   // additionalMetaTags: [
   //   { name: 'robots', content: 'index, follow' },

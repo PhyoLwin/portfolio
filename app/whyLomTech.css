@@ -58,7 +58,7 @@
 }
 
 .why-text-animation::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -89,7 +89,7 @@
 }
 
 .why-sa-animation::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -120,7 +120,7 @@
 }
 
 .why-tt-animation::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;

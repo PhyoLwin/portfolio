@@ -1,18 +1,18 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
-import i18next from 'i18next';
+import { useEffect, useState } from "react";
+import i18next from "i18next";
 import {
   initReactI18next,
   UseTranslationOptions,
   useTranslation as useTranslationOrg,
-} from 'react-i18next';
-import { useCookies } from 'react-cookie';
-import resourcesToBackend from 'i18next-resources-to-backend';
-import LanguageDetector from 'i18next-browser-languagedetector';
-import { getOptions, languages, cookieName } from './settings';
+} from "react-i18next";
+import { useCookies } from "react-cookie";
+import resourcesToBackend from "i18next-resources-to-backend";
+import LanguageDetector from "i18next-browser-languagedetector";
+import { getOptions, languages, cookieName } from "./settings";
 
-const runsOnServerSide = typeof window === 'undefined';
+const runsOnServerSide = typeof window === "undefined";
 
 i18next
   .use(initReactI18next)
@@ -28,7 +28,7 @@ i18next
     returnObjects: true,
     lng: undefined, // let it detect the language on the client side
     detection: {
-      order: ['path', 'htmlTag', 'cookie', 'navigator'],
+      order: ["path", "htmlTag", "cookie", "navigator"],
     },
     preload: runsOnServerSide ? languages : [],
   });
@@ -61,7 +61,7 @@ export function useTranslation(
 
   useEffect(() => {
     if (cookies.i18next === lng) return;
-    setCookie(cookieName, lng, { path: '/' });
+    setCookie(cookieName, lng, { path: "/" });
   }, [lng, cookies.i18next, setCookie]); // ✅ Added setCookie to the dependency array
 
   return ret;

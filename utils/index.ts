@@ -1,1 +1,1 @@
-export { isEven } from './isEven';
+export { isEven } from "./isEven";

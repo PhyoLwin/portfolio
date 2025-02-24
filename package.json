@@ -16,6 +16,7 @@
     "accept-language": "^3.0.20",
     "aos": "^2.3.4",
     "formik": "^2.4.6",
+    "framer-motion": "^12.4.7",
     "i18next": "^24.2.1",
     "i18next-browser-languagedetector": "^8.0.2",
     "i18next-resources-to-backend": "^1.2.1",

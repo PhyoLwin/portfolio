@@ -1,5 +1,5 @@
-import { FC } from 'react';
-import { Description } from './Description';
+import { FC } from "react";
+import { Description } from "./Description";
 
 interface Props {
   index?: number | string;

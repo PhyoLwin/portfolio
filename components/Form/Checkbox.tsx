@@ -1,5 +1,5 @@
-import { FC } from 'react';
-import { Field, FieldProps } from 'formik';
+import { FC } from "react";
+import { Field, FieldProps } from "formik";
 
 interface Props {
   name: string;
@@ -13,7 +13,7 @@ export const Checkbox: FC<Props> = ({ name, label }) => {
         {({ field }: FieldProps) => {
           return (
             <div
-              className={`group block size-7 rounded border ${field.value ? 'bg-blue-500' : 'bg-white'}`}
+              className={`group block size-7 rounded border ${field.value ? "bg-blue-500" : "bg-white"}`}
             >
               {/* Checkmark icon */}
               <input {...field} type="checkbox" className="hidden" />

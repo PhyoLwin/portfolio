@@ -1,13 +1,13 @@
-'use client';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import React, { useState, useEffect, useRef } from 'react';
-import { GrLanguage } from 'react-icons/gr';
-import Flag from 'react-world-flags';
+"use client";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import React, { useState, useEffect, useRef } from "react";
+import { GrLanguage } from "react-icons/gr";
+import Flag from "react-world-flags";
 
 export const LanguageDropdown = () => {
   const fullPathName = usePathname();
-  const pathName = fullPathName.replace(/^\/[a-z]{2}(\/|$)/, '/');
+  const pathName = fullPathName.replace(/^\/[a-z]{2}(\/|$)/, "/");
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement | null>(null);
 
@@ -25,14 +25,14 @@ export const LanguageDropdown = () => {
       }
     };
 
-    document.addEventListener('click', handleClickOutside);
+    document.addEventListener("click", handleClickOutside);
     return () => {
-      document.removeEventListener('click', handleClickOutside);
+      document.removeEventListener("click", handleClickOutside);
     };
   }, []);
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLButtonElement>) => {
-    if (e.key === 'Enter' || e.key === ' ') {
+    if (e.key === "Enter" || e.key === " ") {
       toggleDropdown();
     }
   };

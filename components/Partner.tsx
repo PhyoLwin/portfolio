@@ -1,13 +1,13 @@
-import oktaImage from '@/public/images/partner/okta.jpg';
-import LinusImage from '@/public/images/partner/logo.svg';
-import hkgreenImage from '@/public/images/partner/hk-green.png';
-import koreansocietyMalay from '@/public/images/partner/korean_society_in_malaysia.png';
-import mktechImage from '@/public/images/partner/mktech.png';
-import msImage from '@/public/images/partner/ms.png';
-import nachargerImage from '@/public/images/partner/nacharger.png';
-import { TranslateFunction } from '@/lib/i18n';
-import { FC } from 'react';
-import Image from 'next/image';
+import oktaImage from "@/public/images/partner/okta.jpg";
+import LinusImage from "@/public/images/partner/logo.svg";
+import hkgreenImage from "@/public/images/partner/hk-green.png";
+import koreansocietyMalay from "@/public/images/partner/korean_society_in_malaysia.png";
+import mktechImage from "@/public/images/partner/mktech.png";
+import msImage from "@/public/images/partner/ms.png";
+import nachargerImage from "@/public/images/partner/nacharger.png";
+import { TranslateFunction } from "@/lib/i18n";
+import { FC } from "react";
+import Image from "next/image";
 
 interface Props {
   t: TranslateFunction;
@@ -16,31 +16,31 @@ interface Props {
 export const Partners: FC<Props> = ({ t }) => {
   const partners = [
     {
-      name: 'logo',
+      name: "logo",
       desktopImg: LinusImage,
     },
     {
-      name: 'nacharger',
+      name: "nacharger",
       desktopImg: nachargerImage,
     },
     {
-      name: 'ms',
+      name: "ms",
       desktopImg: msImage,
     },
     {
-      name: 'koreansocietyMalay',
+      name: "koreansocietyMalay",
       desktopImg: koreansocietyMalay,
     },
     {
-      name: 'hkgreen',
+      name: "hkgreen",
       desktopImg: hkgreenImage,
     },
     {
-      name: 'okta',
+      name: "okta",
       desktopImg: oktaImage,
     },
     {
-      name: 'mktech',
+      name: "mktech",
       desktopImg: mktechImage,
     },
   ];
@@ -52,10 +52,10 @@ export const Partners: FC<Props> = ({ t }) => {
     >
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold leading-snug tracking-tight md:text-5xl">
-          {t('partners.title')}
+          {t("partners.title")}
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-xl text-gray-600 md:text-2xl">
-          {t('partners.description')}
+          {t("partners.description")}
         </p>
         <div className="partners-list mt-12 flex flex-wrap justify-center gap-8">
           {partners.slice(0, 4).map((partner, index) => (

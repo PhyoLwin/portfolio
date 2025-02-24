@@ -1,4 +1,4 @@
-import React, { MouseEventHandler } from 'react';
+import React, { MouseEventHandler } from "react";
 
 const CheckIcon = () => (
   <svg
@@ -29,8 +29,8 @@ const Step: React.FC<StepProps> = ({ number, title, isActive, onClick }) => {
         <div
           className={`flex h-10 w-10 items-center justify-center rounded-full border-2 transition-colors duration-300 ${
             isActive
-              ? 'border-blue-500 bg-blue-500'
-              : 'border-gray-300 bg-white'
+              ? "border-blue-500 bg-blue-500"
+              : "border-gray-300 bg-white"
           } `}
         >
           {isActive && <CheckIcon />}

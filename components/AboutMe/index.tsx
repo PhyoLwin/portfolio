@@ -1,12 +1,87 @@
-'use client';
+"use client";
 
-import { FC } from 'react';
-import Image from 'next/image';
-import ThreeDotsImage from '@/public/images/threeDots.svg';
+import { FC } from "react";
+import Image from "next/image";
+import ThreeDotsImage from "@/public/images/threeDots.svg";
+import { Template } from "./Template";
+import { motion } from "framer-motion"; // Add this import
 
 const AboutMe: FC = () => {
+  const educationData = {
+    title: "Education",
+    points: [
+      {
+        title: "University of Yangon",
+        description: "Bachelor of Computer Science (Hons)",
+      },
+      {
+        title: "Kokushikan University",
+        description: "Bachelor of Engineering (Electrical and Information Engineering) - One-Year Student Exchange Program (2023-2024)",
+      },
+      {
+        title: "Professional Web Development Course",
+        description: "Topics: HTML, CSS, jQuery, Grid Layout, Bootstrap, Color Theory, Typography, UI/UX",
+      },
+      {
+        title: "Additional Studies",
+        description: "Image, Sound, and Video Processing, Network Communication, AI, Data Science, Software Engineering, and more.",
+      },
+    ],
+  };
+
+  const experienceData = {
+    title: "Experience",
+    points: [
+      {
+        title: "Freelance Animation Editor",
+        description: "Vyond Animation Project (Jun - Aug 2024)",
+      },
+      {
+        title: "Full Stack Developer",
+        description: "Eternal Dynasty Name Generator (Sep - Dec 2024)",
+      },
+      {
+        title: "Internship at Naito Denshi Electronic Company",
+        description: "Trained in basic work environment and daily operations (One week)",
+      },
+    ],
+  };
+
+  const skillsData = {
+    title: "Skills",
+    points: [
+      {
+        title: "Programming Languages",
+        description: "Python, C#, Java, PHP, HTML, CSS, SwiftUI, Kotlin",
+      },
+      {
+        title: "Frameworks & Libraries",
+        description: "Bootstrap, OpenCV, Pandas, WordPress",
+      },
+      {
+        title: "Full-stack Development",
+        description: "PHP, C#, SwiftUI",
+      },
+      {
+        title: "Front-end Development",
+        description: "HTML, CSS, C#, Kotlin, SwiftUI",
+      },
+      {
+        title: "Content Management Systems",
+        description: "WordPress",
+      },
+      {
+        title: "Tools",
+        description: "Visual Studio, Firebase, Android Studio, Xcode, NetBeans, Sublime Text, MATLAB, MySQL",
+      },
+    ],
+  };
+
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
       id="about-me"
       className="relative bg-white px-4 py-12 md:px-16 md:py-24"
     >
@@ -23,139 +98,62 @@ const AboutMe: FC = () => {
       />
 
       <div className="mx-auto max-w-4xl space-y-6 text-gray-700">
-        <p>
-          I am a junior web developer and AI engineer currently pursuing a
-          Computer Science degree at Yangon University. I specialize in{' '}
-          <span className="font-bold">
-            HTML, CSS, and JavaScript frameworks
-          </span>
-          , with a strong foundation in artificial intelligence and software
-          engineering.
-        </p>
+        <div className="flex flex-col items-center md:flex-row md:space-x-8">
+          <motion.div
+            animate={{ 
+              y: [0, -10, 0],
+            }}
+            transition={{ 
+              duration: 2,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+            className="mb-6 md:mb-0 md:w-1/3"
+          >
+            <div className="overflow-hidden rounded-full border-4 border-[#f4a4f0] shadow-xl">
+              <Image
+                src="/images/kimono.jpg"
+                alt="Profile picture in kimono"
+                width={300}
+                height={300}
+                className="h-[300px] w-[300px] object-cover transform hover:scale-105 transition-transform duration-300"
+                priority
+              />
+            </div>
+          </motion.div>
+          <div className="md:w-2/3">
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="mb-6 text-lg leading-relaxed"
+            >
+              I am a <span className="font-bold text-[#651a5b]">software engineer and designer</span> with experience in{" "}
+              <span className="font-semibold text-[#f4a4f0]">front-end development, mobile apps (iOS & Kotlin), PHP websites, and C#/Java projects</span>. 
+              I've also worked as a <span className="font-bold text-[#6a1f60]">freelance animation editor</span>, blending creativity with technical skills.
+            </motion.p>
 
-        <p>
-          Currently freelancing on a{' '}
-          <span className="font-bold">Vyond animation project</span>, I focus on
-          creating engaging user experiences. I also developed the{' '}
-          <span className="font-bold">Eternal Dynasty Name Generator</span>, a
-          website that combines natural language processing with astrological
-          concepts to generate meaningful names.
-        </p>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="text-lg leading-relaxed bg-gradient-to-r from-pink-50 to-transparent p-4 rounded-lg "
+            >
+              Beyond development, I participated in a <span className="font-bold text-[#651a5b]">Japanese exchange program</span> and 
+              am currently pursuing a <span className="font-semibold text-[#f4a4f0]">master's degree</span>. 
+              Fluent in <span className="font-bold text-[#651a5b]">Japanese</span> and <span className="font-bold text-[#651a5b]">Korean</span>, 
+              I enjoy cross-cultural collaboration and building innovative digital experiences.
+            </motion.p>
+          </div>
+        </div>
 
-        <h3 className="text-2xl font-semibold text-[#0d3388]">Education</h3>
-        <ul className="list-inside list-disc">
-          <li>
-            <span className="font-bold">University of Yangon</span> - Bachelor
-            of Computer Science (Hons)
-          </li>
-          <li>
-            <span className="font-bold">Kokushikan University</span> - Bachelor
-            of Engineering (Electrical and Information Engineering) - One-Year
-            Student Exchange Program (2023-2024)
-          </li>
-          <li>
-            <span className="font-bold">
-              Professional Web Development Course
-            </span>{' '}
-            - Topics: HTML, CSS, jQuery, Grid Layout, Bootstrap, Color Theory,
-            Typography, UI/UX
-          </li>
-          <li>
-            Studied: Image, Sound, and Video Processing, Network Communication,
-            AI, Data Science, Software Engineering, and more.
-          </li>
-        </ul>
-
-        <h3 className="text-2xl font-semibold text-[#0d3388]">Experience</h3>
-        <ul className="list-inside list-disc">
-          <li>
-            <span className="font-bold">Freelance Animation Editor</span> -
-            Vyond Animation Project (Jun - Aug 2024)
-          </li>
-          <li>
-            <span className="font-bold">Full Stack Developer</span> - Eternal
-            Dynasty Name Generator (Sep - Dec 2024)
-          </li>
-          <li>
-            <span className="font-bold">
-              Internship at Naito Denshi Electronic Company
-            </span>{' '}
-            - Trained in basic work environment and daily operations (One week)
-          </li>
-        </ul>
-
-        <h3 className="text-2xl font-semibold text-[#0d3388]">Skills</h3>
-        <ul className="list-inside list-disc">
-          <li>
-            <span className="font-bold">Programming Languages:</span> Python,
-            C#, Java, PHP, HTML, CSS, SwiftUI, Kotlin
-          </li>
-          <li>
-            <span className="font-bold">Frameworks & Libraries:</span>{' '}
-            Bootstrap, OpenCV, Pandas, WordPress
-          </li>
-          <li>
-            <span className="font-bold">Full-stack Development:</span> PHP, C#,
-            SwiftUI
-          </li>
-          <li>
-            <span className="font-bold">Front-end Development:</span> HTML, CSS,
-            C#, Kotlin, SwiftUI
-          </li>
-          <li>
-            <span className="font-bold">Content Management Systems:</span>{' '}
-            WordPress
-          </li>
-          <li>
-            <span className="font-bold">Tools:</span> Visual Studio, Firebase,
-            Android Studio, Xcode, NetBeans, Sublime Text, MATLAB, MySQL
-          </li>
-        </ul>
-
-        <h3 className="text-2xl font-semibold text-[#0d3388]">Soft Skills</h3>
-        <ul className="list-inside list-disc">
-          <li>Management Skills</li>
-          <li>Creativity</li>
-          <li>Digital Marketing</li>
-          <li>Problem Solving</li>
-          <li>Negotiation</li>
-          <li>Critical Thinking</li>
-          <li>Time Management</li>
-          <li>Teamwork</li>
-        </ul>
-
-        <h3 className="text-2xl font-semibold text-[#0d3388]">Languages</h3>
-        <ul className="list-inside list-disc">
-          <li>Korean</li>
-          <li>English</li>
-          <li>Japanese</li>
-        </ul>
-
-        <h3 className="text-2xl font-semibold text-[#0d3388]">Contact</h3>
-        <ul className="list-inside list-disc">
-          <li>
-            Phone: <span className="font-bold">+95 925 583 5167</span>
-          </li>
-          <li>
-            Email: <span className="font-bold">thet2hlaing@gmail.com</span>
-          </li>
-        </ul>
-
-        <h3 className="text-2xl font-semibold text-[#0d3388]">References</h3>
-        <ul className="list-inside list-disc">
-          <li>
-            Dr. Thet Thet Hlaing - Professor, University of Yangon - Phone:{' '}
-            <span className="font-bold">+959 95132852</span> - Email:{' '}
-            <span className="font-bold">wintpapakyaw@gmail.com</span>
-          </li>
-          <li>
-            Dr. Wint Pa Pa Kyaw - Professor, University of Yangon - Phone:{' '}
-            <span className="font-bold">+959-9632-25576</span> - Email:{' '}
-            <span className="font-bold">phyo12pyaepyae@gmail.com</span>
-          </li>
-        </ul>
+        <Template {...educationData} type="education" />
+        <Template {...experienceData} type="experience" />
+        <Template {...skillsData} type="skills" />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

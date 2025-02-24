@@ -1,6 +1,6 @@
-import { FC } from 'react';
-import { Question } from '../QuotationForm/Question';
-import { Field } from 'formik';
+import { FC } from "react";
+import { Question } from "../QuotationForm/Question";
+import { Field } from "formik";
 
 interface Option {
   value: string;
