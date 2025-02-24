@@ -7,11 +7,7 @@ import { metadata as meta } from "@/utils/Meta";
 
 export const metadata = meta;
 
-export default async function Home({
-  params,
-}: {
-  params: { lng: Language };
-}) {
+export default async function Home({ params }: { params: { lng: Language } }) {
   // Await the language parameter first
   const lng = await Promise.resolve(params.lng);
   const { t } = await getTranslation(lng, "common");

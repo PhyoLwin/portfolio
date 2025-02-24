@@ -2,7 +2,14 @@ import { FC } from "react";
 import Image from "next/image";
 import ThreeDotsImage from "@/public/images/threeDots.svg";
 import { motion } from "framer-motion";
-import { FaGraduationCap, FaBriefcase, FaTools, FaLanguage, FaPhone, FaUserTie } from "react-icons/fa";
+import {
+  FaGraduationCap,
+  FaBriefcase,
+  FaTools,
+  FaLanguage,
+  FaPhone,
+  FaUserTie,
+} from "react-icons/fa";
 import { useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { useState, useEffect } from "react";
@@ -15,23 +22,23 @@ interface EducationImage {
 const educationImages: EducationImage[] = [
   {
     src: "/images/school/2.jpg",
-    alt: "Kokushikan University Campus"
+    alt: "Kokushikan University Campus",
   },
   {
     src: "/images/school/1.jpeg",
-    alt: "University of Yangon"
+    alt: "University of Yangon",
   },
   {
     src: "/images/school/3.jpeg",
-    alt: "Web Development"
+    alt: "Web Development",
   },
   {
     src: "/images/school/4.png",
-    alt: "Additional Studies"
-  }
+    alt: "Additional Studies",
+  },
 ];
 
-export const Template: FC<Props> = ({ title, points, type = 'education' }) => {
+export const Template: FC<Props> = ({ title, points, type = "education" }) => {
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -44,68 +51,76 @@ export const Template: FC<Props> = ({ title, points, type = 'education' }) => {
 
   const getIcon = () => {
     switch (type) {
-      case 'education':
+      case "education":
         return <FaGraduationCap className="h-8 w-8 text-[#e896dd]" />;
-      case 'experience':
+      case "experience":
         return <FaBriefcase className="h-8 w-8 text-[#e896dd]" />;
-      case 'skills':
+      case "skills":
         return <FaTools className="h-8 w-8 text-[#e896dd]" />;
-      case 'languages':
+      case "languages":
         return <FaLanguage className="h-8 w-8 text-[#e896dd]" />;
-      case 'contact':
+      case "contact":
         return <FaPhone className="h-8 w-8 text-[#e896dd]" />;
-      case 'references':
+      case "references":
         return <FaUserTie className="h-8 w-8 text-[#e896dd]" />;
       default:
         return null;
     }
   };
 
-  const renderListItem = ({ title, description, index }: { title: string; description: string; index: number }) => (
-    <motion.div 
+  const renderListItem = ({
+    title,
+    description,
+    index,
+  }: {
+    title: string;
+    description: string;
+    index: number;
+  }) => (
+    <motion.div
       className="relative overflow-hidden"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
       variants={{
-        visible: { transition: { staggerChildren: 0.2 } }
+        visible: { transition: { staggerChildren: 0.2 } },
       }}
     >
       <motion.div
         className="absolute inset-0 bg-[#e896dd]"
         variants={{
           hidden: { scaleX: 1 },
-          visible: { 
+          visible: {
             scaleX: 0,
-            transition: { duration: 0.8, ease: "easeInOut" }
-          }
+            transition: { duration: 0.8, ease: "easeInOut" },
+          },
         }}
         style={{ originX: 0 }}
       />
-      
-      <motion.span 
+
+      <motion.span
         className="block font-bold text-black text-xl mb-2"
         variants={{
           hidden: { opacity: 0, y: 20 },
-          visible: { 
-            opacity: 1, 
+          visible: {
+            opacity: 1,
             y: 0,
-            transition: { duration: 0.6, delay: 0.4 }
-          }
+            transition: { duration: 0.6, delay: 0.4 },
+          },
         }}
       >
         {title}
       </motion.span>
-      
-      <motion.span 
+
+      <motion.span
         className="block text-lg leading-relaxed text-gray-700"
         variants={{
           hidden: { opacity: 0, y: 20 },
-          visible: { 
-            opacity: 1, 
+          visible: {
+            opacity: 1,
             y: 0,
-            transition: { duration: 0.6, delay: 0.6 }
-          }
+            transition: { duration: 0.6, delay: 0.6 },
+          },
         }}
       >
         {description}
@@ -114,7 +129,7 @@ export const Template: FC<Props> = ({ title, points, type = 'education' }) => {
   );
 
   useEffect(() => {
-    if (type === 'education') {
+    if (type === "education") {
       const interval = setInterval(() => {
         setCurrentImageIndex((prev) => (prev + 1) % educationImages.length);
       }, 3000);
@@ -138,7 +153,7 @@ export const Template: FC<Props> = ({ title, points, type = 'education' }) => {
               <div className="relative aspect-video overflow-hidden rounded-xl shadow-lg">
                 <Image
                   src={educationImages[index]?.src || educationImages[0].src}
-                  alt={educationImages[index]?.alt || 'Education'}
+                  alt={educationImages[index]?.alt || "Education"}
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"
                   priority={index === 0}
@@ -156,7 +171,7 @@ export const Template: FC<Props> = ({ title, points, type = 'education' }) => {
               <div className="relative aspect-video overflow-hidden rounded-xl shadow-lg">
                 <Image
                   src={educationImages[index]?.src || educationImages[0].src}
-                  alt={educationImages[index]?.alt || 'Education'}
+                  alt={educationImages[index]?.alt || "Education"}
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"
                   priority={index === 0}
@@ -191,7 +206,9 @@ export const Template: FC<Props> = ({ title, points, type = 'education' }) => {
       />
 
       <div className="mx-auto max-w-4xl">
-        {type === 'education' ? renderEducationSection() : (
+        {type === "education" ? (
+          renderEducationSection()
+        ) : (
           <ul className="space-y-6">
             {points.map(({ title, description }, index) => (
               <motion.li
