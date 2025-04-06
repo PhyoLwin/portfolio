@@ -53,54 +53,51 @@
   },
   "portfolio": {
     "title": "ポートフォリオ",
-    "years": {
-      "2017": "2017年",
-      "2018": "2018年",
-      "2019": "2019年",
-      "2020": "2020年",
-      "2021": "2021年",
-      "2023": "2023年",
-      "2024": "2024年"
-    },
     "projects": {
       "client": "クライアント",
-      "location": "所在地",
-      "project1": {
-        "title": "POS Laju物流業務改革コンサルティング",
-        "client": "郵便局",
-        "location": "マレーシア"
+      "location": "場所",
+      "linus": {
+        "title": "Linus学習管理システム",
+        "client": "Linus教育(LomTechプロジェクト)",
+        "location": "ミャンマー"
       },
-      "project2": {
-        "title": "エクストリームアドベンチャートラベルプラットフォーム開発",
-        "client": "Axiago",
-        "location": "マレーシア"
+      "lomtech": {
+        "title": "LomTech企業ホームページ",
+        "client": "LomTechプロジェクト",
+        "location": "韓国"
       },
-      "project3": {
-        "title": "POS Laju宅配物流追跡システム開発と運用",
-        "client": "郵便局",
-        "location": "マレーシア"
+      "eternal": {
+        "title": "Eternal Dynasty自然言語処理システム",
+        "client": "大学プロジェクト",
+        "location": "ミャンマー"
+      },
+      "cinema": {
+        "title": "映画チケット予約システム",
+        "client": "大学プロジェクト",
+        "location": "ミャンマー"
+      },
+      "donut": {
+        "title": "ドーナツショップEコマース",
+        "client": "April Donuts",
+        "location": "ミャンマー"
+      },
+      "seventeen": {
+        "title": "SEVENTEENファンコミュニティアプリ",
+        "client": "個人プロジェクト",
+        "location": "韓国"
+      },
+      "student": {
+        "title": "学生管理システム",
+        "client": "大学プロジェクト",
+        "location": "ミャンマー"
+      },
+      "maxenergy": {
+        "title": "Max Energy PowerBIダッシュボード",
+        "client": "Max Energy",
+        "location": "ミャンマー"
       }
     }
   },
-  "partners": {
-    "title": "パートナー",
-    "description": "私たちと共に製品を生み出したクライアントのご紹介。",
-    "partnerNames": {
-      "nacharger": "NaCharger",
-      "ms": "マイクロソフト",
-      "koreansocietyMalay": "マレーシア韓国協会",
-      "hkgreen": "HK Green",
-      "okta": "Okta",
-      "mktech": "MK Tech"
-    }
-  },
-  "footer": {
-    "slogan": "才能。テクノロジー。ゴールデンランドで成功を。",
-    "address": "6, SAMSEONG-RO, 103-GIL, GANGNAM-GU,\nSEOUL, REPUBLIC OF KOREA",
-    "tel": "電話: +82-2-336-6777",
-    "fax": "ファックス: +82-2-336-6779",
-    "business_registration": "事業登録番号: 476-81-01694",
-    "rights_reserved": "All Rights Reserved.",
-    "hr_slogan": "📩 チームに参加しませんか？"
-  }
+  "aboutMe": "私について",
+  "contactMe": "お問い合わせ"
 }

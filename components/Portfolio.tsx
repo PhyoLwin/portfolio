@@ -10,229 +10,172 @@ interface Project {
   client: string;
   location: string;
   imageSrc: string;
+  role: string;
+  techStack: string[];
 }
 
 interface YearData {
-  year: number | string;
+  year: string;
   projects: Project[];
 }
 
 const portfolioData: YearData[] = [
   {
-    year: 2017,
+    year: "2024-2025",
     projects: [
       {
-        title: "portfolio.projects.project1.title",
-        client: "portfolio.projects.project1.client",
-        location: "portfolio.projects.project1.location",
-        imageSrc:
-          "https://www.shutterstock.com/image-vector/delivery-car-box-fly-out-600nw-1970870492.jpg",
+        title: "portfolio.projects.linus.title",
+        client: "portfolio.projects.linus.client",
+        location: "portfolio.projects.linus.location",
+        imageSrc: "https://img.freepik.com/free-vector/online-certification-illustration_23-2148575636.jpg",
+        role: "Front-end Developer",
+        techStack: ["React", "TypeScript", "Tailwind CSS", "Material UI"]
       },
       {
-        title: "portfolio.projects.project2.title",
-        client: "portfolio.projects.project2.client",
-        location: "portfolio.projects.project2.location",
-        imageSrc:
-          "https://img.freepik.com/free-vector/flat-background-world-tourism-day-celebration_23-2149582530.jpg",
-      },
-    ],
-  },
-  {
-    year: 2018,
-    projects: [
-      {
-        title: "portfolio.projects.project3.title",
-        client: "portfolio.projects.project3.client",
-        location: "portfolio.projects.project3.location",
-        imageSrc:
-          "https://img.freepik.com/free-vector/illustration-post-office_53876-81073.jpg",
+        title: "portfolio.projects.lomtech.title",
+        client: "portfolio.projects.lomtech.client",
+        location: "portfolio.projects.lomtech.location",
+        imageSrc: "https://img.freepik.com/free-vector/gradient-technology-company-banner-template_23-2149173764.jpg",
+        role: "Front-end Developer",
+        techStack: ["Next.js", "TypeScript", "Tailwind CSS", "i18n"]
       },
       {
-        title: "portfolio.projects.project4.title",
-        client: "portfolio.projects.project4.client",
-        location: "portfolio.projects.project4.location",
-        imageSrc:
-          "https://img.freepik.com/free-vector/hand-drawn-post-office-cartoon-illustration_23-2151093339.jpg",
-      },
-      {
-        title: "portfolio.projects.project5.title",
-        client: "portfolio.projects.project5.client",
-        location: "portfolio.projects.project5.location",
-        imageSrc:
-          "https://img.freepik.com/free-vector/hand-drawn-fire-prevention-concept_23-2149126371.jpg",
-      },
-    ],
-  },
-  {
-    year: 2019,
-    projects: [
-      {
-        title: "portfolio.projects.project6.title",
-        client: "portfolio.projects.project6.client",
-        location: "portfolio.projects.project6.location",
-        imageSrc: "/images/portfolio/prime.png",
-      },
-    ],
-  },
-  {
-    year: "2020",
-    projects: [
-      {
-        title: "portfolio.projects.project7.title",
-        client: "portfolio.projects.project7.client",
-        location: "portfolio.projects.project7.location",
-        imageSrc: "/images/portfolio/codehada.png",
-      },
-      {
-        title: "portfolio.projects.project14.title",
-        client: "portfolio.projects.project14.client",
-        location: "portfolio.projects.project14.location",
-        imageSrc: "/images/portfolio/tabtab.png",
-      },
-    ],
-  },
-  {
-    year: "2021",
-    projects: [
-      {
-        title: "portfolio.projects.project8.title",
-        client: "portfolio.projects.project8.client",
-        location: "portfolio.projects.project8.location",
-        imageSrc:
-          "https://www.shutterstock.com/image-vector/cartoon-airplane-over-runway-passenger-600nw-2428871881.jpg",
-      },
-      {
-        title: "portfolio.projects.project15.title",
-        client: "portfolio.projects.project15.client",
-        location: "portfolio.projects.project15.location",
-        imageSrc: "/images/portfolio/healivery.png",
-      },
-    ],
+        title: "portfolio.projects.eternal.title",
+        client: "portfolio.projects.eternal.client",
+        location: "portfolio.projects.eternal.location",
+        imageSrc: "https://img.freepik.com/free-vector/artificial-intelligence-concept-illustration_114360-7000.jpg",
+        role: "Full Stack Developer",
+        techStack: ["Python", "NLP", "React", "Node.js"]
+      }
+    ]
   },
   {
     year: "2023",
     projects: [
       {
-        title: "portfolio.projects.project9.title",
-        client: "portfolio.projects.project9.client",
-        location: "portfolio.projects.project9.location",
-        imageSrc: "/images/portfolio/amma.png",
+        title: "portfolio.projects.cinema.title",
+        client: "portfolio.projects.cinema.client",
+        location: "portfolio.projects.cinema.location",
+        imageSrc: "https://img.freepik.com/free-vector/cinema-realistic-poster-with-illuminated-spotlight-film-strip-clapper-board-popcorn-3d-glasses-tickets-vector-illustration_1284-77181.jpg",
+        role: "Java Developer",
+        techStack: ["Java", "MySQL", "Bootstrap"]
       },
       {
-        title: "portfolio.projects.project10.title",
-        client: "portfolio.projects.project10.client",
-        location: "portfolio.projects.project10.location",
-        imageSrc:
-          "https://st4.depositphotos.com/20689124/24064/i/450/depositphotos_240644534-stock-photo-stock-market-forex-trading-graph.jpg",
+        title: "portfolio.projects.donut.title",
+        client: "portfolio.projects.donut.client",
+        location: "portfolio.projects.donut.location",
+        imageSrc: "https://img.freepik.com/free-vector/hand-drawn-bakery-landing-page_23-2148777266.jpg",
+        role: "Front-end Developer",
+        techStack: ["React", "JavaScript", "CSS3", "Responsive Design"]
       },
-    ],
+      {
+        title: "portfolio.projects.seventeen.title",
+        client: "portfolio.projects.seventeen.client",
+        location: "portfolio.projects.seventeen.location",
+        imageSrc: "https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149052117.jpg",
+        role: "iOS Developer",
+        techStack: ["Swift", "UIKit", "CoreData", "REST API"]
+      }
+    ]
   },
   {
-    year: "2024",
+    year: "2022",
     projects: [
       {
-        title: "portfolio.projects.project11.title",
-        client: "portfolio.projects.project11.client",
-        location: "portfolio.projects.project11.location",
-        imageSrc:
-          "https://shopequo.com/cdn/shop/articles/Cover_58fe9aa4-942a-4469-b73f-d0b207249fc6.jpg?v=1711295069&width=1600",
+        title: "portfolio.projects.student.title",
+        client: "portfolio.projects.student.client",
+        location: "portfolio.projects.student.location",
+        imageSrc: "https://img.freepik.com/free-vector/school-management-abstract-concept-illustration_335657-4907.jpg",
+        role: "C# Developer",
+        techStack: ["C#", ".NET", "SQL Server", "WPF"]
       },
       {
-        title: "portfolio.projects.project12.title",
-        client: "portfolio.projects.project12.client",
-        location: "portfolio.projects.project12.location",
-        imageSrc: "/images/portfolio/2024.mp4",
-      },
-      {
-        title: "portfolio.projects.project13.title",
-        client: "portfolio.projects.project13.client",
-        location: "portfolio.projects.project13.location",
-        imageSrc:
-          "https://www.amitree.com/wp-content/uploads/2021/08/the-pros-and-cons-of-paper-to-do-lists.jpeg",
-      },
-      {
-        title: "portfolio.projects.project16.title",
-        client: "portfolio.projects.project16.client",
-        location: "portfolio.projects.project16.location",
-        imageSrc: "https://nacharger.com/_nuxt/img/image-Section04.e519ffe.png",
-      },
-    ],
-  },
+        title: "portfolio.projects.maxenergy.title",
+        client: "portfolio.projects.maxenergy.client",
+        location: "portfolio.projects.maxenergy.location",
+        imageSrc: "https://img.freepik.com/free-vector/dashboard-concept-illustration_114360-4351.jpg",
+        role: "ASP.NET Developer",
+        techStack: ["ASP.NET", "PowerBI", "SQL", "Azure"]
+      }
+    ]
+  }
 ];
 
 interface Props {
   lng: string;
 }
 
-export const PortfolioLayout: React.FC<Props> = ({ lng }) => {
+const Portfolio: React.FC<Props> = ({ lng }) => {
   const { t } = useTranslation(lng, "common");
 
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ 
+      duration: 1000,
+      once: true,
+      offset: 100
+    });
   }, []);
 
   return (
-    <div id="portfolio" className="bg-customBlue px-4 py-20 text-white sm:px-8">
-      <h2 className="mb-8 text-center text-3xl font-bold sm:text-4xl">
-        {t("portfolio.title")}
-      </h2>
-      {portfolioData.map((yearData, index) => (
-        <div key={index} className="mb-12">
-          <h3 className="mb-4 text-2xl font-semibold sm:text-3xl">
-            {t(`portfolio.years.${yearData.year}`)}
-          </h3>
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
-            {yearData.projects.map((project, idx) => {
-              const isVideo =
-                project.imageSrc.endsWith(".mp4") ||
-                project.imageSrc.endsWith(".webm") ||
-                project.imageSrc.endsWith(".ogg");
-              return (
+    <section 
+      id="portfolio" 
+      className="bg-black px-4 py-20 text-white sm:px-8 scroll-mt-20" // Changed from bg-gray-900 to bg-black
+    >
+      <div className="container mx-auto">
+        <h2 className="mb-12 text-center text-4xl font-bold">
+          {t("portfolio.title")}
+        </h2>
+        {portfolioData.map((yearData, index) => (
+          <div key={index} className="mb-16">
+            <h3 className="mb-8 text-2xl font-semibold">
+              {yearData.year}
+            </h3>
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+              {yearData.projects.map((project, idx) => (
                 <div
                   key={idx}
-                  className="portfolio-item block overflow-hidden rounded-lg bg-white"
+                  className="group relative overflow-hidden rounded-xl bg-zinc-900 shadow-xl transition-all hover:scale-[1.02]" // Changed from bg-gray-800 to bg-zinc-900
                   data-aos="fade-up"
                   data-aos-delay={idx * 100}
                 >
-                  <div className="relative h-80 w-full">
-                    {isVideo ? (
-                      <video
-                        src={project.imageSrc}
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        className="absolute inset-0 h-full w-full object-cover"
-                      />
-                    ) : (
-                      <Image
-                        src={project.imageSrc}
-                        alt={t(project.title)}
-                        width={500}
-                        height={500}
-                        className="absolute inset-0 h-full w-full object-cover"
-                      />
-                    )}
+                  <div className="relative h-64 w-full">
+                    <Image
+                      src={project.imageSrc}
+                      alt={t(project.title)}
+                      fill
+                      className="object-cover transition-transform duration-300 group-hover:scale-110"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
                   </div>
-                  <div className="p-2">
-                    <h3 className="mb-1 text-lg font-semibold text-gray-500">
+                  <div className="p-6">
+                    <h4 className="mb-2 text-xl font-bold text-white">
                       {t(project.title)}
-                    </h3>
-                    <p className="mb-1 text-sm text-gray-500">
+                    </h4>
+                    <p className="mb-2 text-sm text-gray-300">
+                      {project.role}
+                    </p>
+                    <p className="mb-2 text-sm text-gray-300">
                       {t("portfolio.projects.client")}: {t(project.client)}
                     </p>
-                    <p className="text-sm text-gray-500">
-                      {t("portfolio.projects.location")}: {t(project.location)}
-                    </p>
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      {project.techStack.map((tech, techIdx) => (
+                        <span
+                          key={techIdx}
+                          className="rounded-full bg-gray-700 px-3 py-1 text-xs text-gray-300"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                 </div>
-              );
-            })}
+              ))}
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </section>
   );
 };
 
-export default PortfolioLayout;
+export default Portfolio;

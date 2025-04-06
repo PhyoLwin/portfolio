@@ -53,119 +53,51 @@
   "logoAlt": "롬테크 로고",
   "portfolio": {
     "title": "포트폴리오",
-    "years": {
-      "2017": "2017년",
-      "2018": "2018년",
-      "2019": "2019년",
-      "2020": "2020년",
-      "2021": "2021년",
-      "2023": "2023년",
-      "2024": "2024년"
-    },
     "projects": {
       "client": "클라이언트",
       "location": "위치",
-      "project1": {
-        "title": "POS Laju 물류 비즈니스 프로세스 재설계 컨설팅",
-        "client": "우체국",
-        "location": "말레이시아"
-      },
-      "project2": {
-        "title": "Extreme Adventure 여행 플랫폼 개발",
-        "client": "Axiago",
-        "location": "말레이시아"
-      },
-      "project3": {
-        "title": "POS Laju 소포 물류 추적 시스템 개발 및 운영",
-        "client": "우체국",
-        "location": "말레이시아"
-      },
-      "project4": {
-        "title": "POS Laju 이행 시스템 개발",
-        "client": "우체국",
-        "location": "말레이시아"
-      },
-      "project5": {
-        "title": "Incident Management System 개발 및 유지보수",
-        "client": "Logit Global",
-        "location": "말레이시아"
-      },
-      "project6": {
-        "title": "Business English Learning App 개발 및 유지보수",
-        "client": "ITDA",
+      "linus": {
+        "title": "Linus 학습 관리 시스템",
+        "client": "Linus 교육(롬테크 프로젝트)",
         "location": "미얀마"
       },
-      "project7": {
-        "title": "초등학생을 위한 코딩 교육 MVP 앱 개발",
-        "client": "Codehada",
+      "lomtech": {
+        "title": "롬테크 회사 홈페이지",
+        "client": "롬테크 프로젝트",
         "location": "대한민국"
       },
-      "project8": {
-        "title": "Royal Malaysian Air Force 항공기 유지 보수 관리 시스템 개발",
-        "client": "Royal Malaysian Air Force",
-        "location": "말레이시아"
+      "eternal": {
+        "title": "Eternal Dynasty 자연어 처리 시스템",
+        "client": "대학 프로젝트",
+        "location": "미얀마"
       },
-      "project9": {
-        "title": "Royal Malaysian Air Force 교육 관리 및 LMS 개발",
-        "client": "Royal Malaysian Air Force",
-        "location": "말레이시아"
+      "cinema": {
+        "title": "영화 티켓 예매 시스템",
+        "client": "대학 프로젝트",
+        "location": "미얀마"
       },
-      "project10": {
-        "title": "Coin Futures Trading Platform MVP 개발 및 유지보수",
-        "client": "Real Trading",
-        "location": "미국"
+      "donut": {
+        "title": "도넛 샵 이커머스",
+        "client": "April Donuts",
+        "location": "미얀마"
       },
-      "project11": {
-        "title": "고양 환경 에너지 시설 포스트 관리 시스템 재구축",
-        "client": "고양 환경 에너지 시설",
+      "seventeen": {
+        "title": "세븐틴 팬 커뮤니티 앱",
+        "client": "개인 프로젝트",
         "location": "대한민국"
       },
-      "project12": {
-        "title": "인도네시아의 새로운 수도 누산타라 WTE 소각장 운영 및 관리 시스템 개발",
-        "client": "공공 주택 부서",
-        "location": "인도네시아"
+      "student": {
+        "title": "학생 관리 시스템",
+        "client": "대학 프로젝트",
+        "location": "미얀마"
       },
-      "project13": {
-        "title": "노르웨이 스타트업 AI 회의 노트 앱 MeetNote MVP 개발",
-        "client": "MeetNote",
-        "location": "노르웨이"
-      },
-      "project14": {
-        "title": "위치 기반 레스토랑 추천 시스템 개발",
-        "client": "Tab Tab",
-        "location": "말레이시아"
-      },
-      "project15": {
-        "title": "개인별 맞춤 영양제 추천 시스템 개발",
-        "client": "Healivery",
-        "location": "말레이시아"
-      },
-      "project16": {
-        "title": "나차저 기능 개발 및 유지보수",
-        "client": "Nachaer",
-        "location": "South Korea"
+      "maxenergy": {
+        "title": "Max Energy PowerBI 대시보드",
+        "client": "Max Energy",
+        "location": "미얀마"
       }
     }
   },
-  "partners": {
-    "title": "파트너",
-    "description": "LomTech와 함께 제품을 만든 고객사를 소개합니다.",
-    "partnerNames": {
-      "nacharger": "나차저",
-      "ms": "마이크로소프트",
-      "koreansocietyMalay": "말레이시아 한국사회",
-      "hkgreen": "HK 그린",
-      "okta": "옥타",
-      "mktech": "MK 테크"
-    }
-  },
-  "footer": {
-    "slogan": "Talent. Tech. Thrive in Goldenland",
-    "address": "서울특별시 강남구 삼성로103길 6",
-    "tel": "전화: 02-336-6777",
-    "fax": "팩스: 02-336-6779",
-    "business_registration": "사업자등록번호: 476-81-01694",
-    "rights_reserved": "모든 권리 보유.",
-    "hr_slogan": "📩 우리 팀에 합류하세요"
-  }
+  "aboutMe": "소개",
+  "contactMe": "연락하기"
 }

@@ -2,12 +2,12 @@
 
 import { FC, useEffect, useState, useRef } from "react";
 import { usePathname, useRouter } from "next/navigation";
-import { ProjectInquiryButton } from "./ProjectInquiryButton";
 import { LanguageDropdown } from "./LanguageDropdown";
 import "@/app/NavBar.css";
 import { Language } from "@/lib/i18n/settings";
 import { useTranslation } from "@/lib/i18n/client";
 import { CiMenuBurger } from "react-icons/ci";
+import { ProjectInquiryButton } from "./ProjectInquiryButton";
 
 interface Props {
   lng: Language;
@@ -27,31 +27,11 @@ export const NavBar: FC<Props> = ({ lng }) => {
     setIsMenuOpen(false);
   };
 
-  const handleProjectInquiryClick = () => {
-    router.push("/quotation");
-  };
-
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const isQuotationPage = pathname.endsWith("/quotation");
-
-  //Project inquiry button hide the quotation form
-  const renderProjectInquiryButton = () => {
-    return (
-      !isQuotationPage && (
-        <ProjectInquiryButton
-          onClick={handleProjectInquiryClick}
-          variant="primary"
-        >
-          {t("projectInquiry")}
-        </ProjectInquiryButton>
-      )
-    );
-  };
-
-  const menuRef = useRef<HTMLDivElement>(null); // Create a ref for the menu dropdown
+  const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -61,8 +41,7 @@ export const NavBar: FC<Props> = ({ lng }) => {
             (event.target as HTMLElement).getAttribute("data-scroll") as string,
           );
         }
-
-        setIsMenuOpen(false); // Close the menu dropdown if clicked outside
+        setIsMenuOpen(false);
       }
     };
 
@@ -71,92 +50,70 @@ export const NavBar: FC<Props> = ({ lng }) => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
+
   return (
     <>
       <nav className="fixed z-50 w-full bg-black backdrop-blur-sm transition-transform duration-300">
         <div className="flex h-20 max-w-full items-center justify-between px-4">
-          {!isQuotationPage && (
-            <div className="hidden flex-grow items-center justify-center md:flex">
-              <button
-                onClick={() => scrollToSection("whylomtech")}
-                className="nav-link nav-link-custom"
-              >
-                {t("whyLomtech")}
-              </button>
+          <button 
+            onClick={handleMenuToggle}
+            className="md:hidden text-white"
+          >
+            <CiMenuBurger size={24} />
+          </button>
 
-              <button
-                onClick={() => scrollToSection("portfolio")}
-                className="nav-link nav-link-custom"
-              >
-                {t("portfolios")}
-              </button>
-
-              <button
-                onClick={() => scrollToSection("partners")}
-                className="nav-link nav-link-custom"
-              >
-                {t("partnersi")}
-              </button>
-
-              <button
-                onClick={() => scrollToSection("contact")}
-                className="nav-link nav-link-custom"
-              >
-                {t("contactUs")}
-              </button>
-              <div className="ml-4">
-                <ProjectInquiryButton
-                  onClick={handleProjectInquiryClick}
-                  variant="primary"
-                >
-                  {t("projectInquiry")}
-                </ProjectInquiryButton>
-              </div>
-            </div>
-          )}
-
-          <div className="flex items-center space-x-2">
-            <LanguageDropdown />
-            {!isQuotationPage && (
-              <button
-                className="relative inline-block text-left text-black md:hidden"
-                onClick={handleMenuToggle}
-              >
-                <CiMenuBurger className="h-6 w-6 text-white" />
-              </button>
-            )}
-          </div>
-        </div>
-
-        {isMenuOpen && !isQuotationPage && (
-          <div ref={menuRef} className="menu-dropdown md:hidden">
+          <div className="hidden flex-grow items-center justify-center md:flex">
             <button
-              data-scroll="whylomtech"
+              onClick={() => scrollToSection("contact")}
               className="nav-link nav-link-custom"
             >
-              {t("whyLomtech")}
+              {t("aboutMe")}
             </button>
-
             <button
-              data-scroll="portfolio"
+              onClick={() => scrollToSection("portfolio")}
               className="nav-link nav-link-custom"
             >
               {t("portfolios")}
             </button>
+            <div className="ml-4">
+              <ProjectInquiryButton
+                onClick={() => scrollToSection("contact")}
+                variant="primary"
+              >
+                {t("contactMe")}
+              </ProjectInquiryButton>
+            </div>
+          </div>
 
-            <button data-scroll="partners" className="nav-link nav-link-custom">
-              {t("partnersi")}
+          <div className="flex items-center space-x-2">
+            <LanguageDropdown />
+          </div>
+        </div>
+
+        {/* Mobile menu dropdown */}
+        {isMenuOpen && (
+          <div ref={menuRef} className="absolute w-full bg-black py-4 md:hidden">
+            <button
+              onClick={() => scrollToSection("contact")}
+              className="block w-full px-4 py-2 text-left text-white hover:bg-gray-800"
+            >
+              {t("aboutMe")}
             </button>
-            <button data-scroll="contact" className="nav-link nav-link-custom">
-              {t("contactUs")}
+            <button
+              onClick={() => scrollToSection("portfolio")}
+              className="block w-full px-4 py-2 text-left text-white hover:bg-gray-800"
+            >
+              {t("portfolios")}
+            </button>
+            <button
+              onClick={() => scrollToSection("contact")}
+              className="block w-full px-4 py-2 text-left text-white hover:bg-gray-800"
+            >
+              {t("contactMe")}
             </button>
           </div>
         )}
       </nav>
-      {/* Project Inquiry Button for Mobile and Tablet Views */}
-      <div className="projectbtn btnbottom  btnright md:hidden">
-        {renderProjectInquiryButton()}
-      </div>
     </>
   );
 };

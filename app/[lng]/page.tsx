@@ -4,6 +4,7 @@ import { Language } from "@/lib/i18n/settings";
 import AboutMe from "@/components/AboutMe";
 import { NavBar } from "@/components/Navbar";
 import { metadata as meta } from "@/utils/Meta";
+import Portfolio from "@/components/Portfolio";
 
 export const metadata = meta;
 
@@ -17,6 +18,7 @@ export default async function Home({ params }: { params: { lng: Language } }) {
       <NavBar lng={lng} />
       <BgAnimation />
       <AboutMe lng={lng} />
+      <Portfolio lng={lng} />
     </div>
   );
 }
