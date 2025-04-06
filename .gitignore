@@ -34,3 +34,5 @@ dist-ssr
 *storybook.log
 
 .eslintcache.next
+.next/
+.next/cache/
