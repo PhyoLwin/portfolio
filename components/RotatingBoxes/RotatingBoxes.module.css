@@ -1,0 +1,85 @@
+/* components/RotatingBoxes.module.css */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    color: #00136c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+
+.box:first-child {
+    background-color: red;
+    animation: loader 2s infinite;
+}
+
+.box:nth-child(2) {
+    background-color: green;
+    animation: loader 3s infinite;
+}
+
+.box:nth-child(3) {
+    background-color: yellow;
+    animation: loader 4s infinite;
+}
+
+.box:last-child {
+    background-color: blue;
+    animation: loader 5s infinite;
+}
+
+@keyframes loader {
+    0% {
+        rotate: 0deg;
+    }
+
+    25% {
+        rotate: y 90deg;
+        scale: 0.5;
+    }
+
+    50% {
+        rotate: 180deg;
+    }
+
+    75% {
+        rotate: x 270deg;
+        border-radius: 50%;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+@supports not (rotate: 0deg) {
+    @keyframes loader {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        25% {
+            transform: scale(0.5) rotateY(90deg);
+        }
+
+        50% {
+            transform: rotate(180deg);
+        }
+
+        75% {
+            transform: rotateX(270deg);
+            border-radius: 50%;
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}

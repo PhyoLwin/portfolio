@@ -3,51 +3,23 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Phyo Pyae Pyae Lwin",
   description:
-    " web developer and AI engineer specializing in HTML, CSS, JavaScript frameworks, and artificial intelligence. Currently pursuing a Computer Science degree at Yangon University and freelancing on innovative projects.",
+    "Phyo Pyae Pyae Lwin is a web developer and AI engineer passionate about crafting seamless digital experiences and building intelligent systems. Explore projects and get in touch for collaboration or hiring.",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
   },
   openGraph: {
-    title: "LomTech - Leading Technology Solutions",
+    title: "Phyo Pyae Pyae Lwin - Developer & AI Enthusiast",
     description:
-      "Explore how LomTech provides cutting-edge tech solutions tailored to your business needs. From software development to IT services, we help businesses grow.",
-    url: "https://new-fe.lomtech.net/",
+      "Welcome to my personal portfolio. I'm a full-stack developer and AI enthusiast skilled in JavaScript frameworks, computer vision, and machine learning. Let's build something amazing together.",
+    url: "https://phyolwin.dev",
     type: "website",
     images: [
       {
-        url: "https://new-fe.lomtech.net/static/media/logo.8089a53b183884681218.png",
-        alt: "LomTech Logo",
+        url: "/images/profile-cover.png",
+        alt: "Phyo Pyae Pyae Lwin Portfolio Cover",
       },
     ],
-    // site_name: 'LomTech',
     locale: "en_US",
   },
-  // additionalMetaTags: [
-  //   { name: 'robots', content: 'index, follow' },
-  //   { name: 'keywords', content: 'LomTech, technology solutions, IT services, business growth, innovation, tech solutions, software development, IT consultations, Korean IT company, Asia IT company' },
-  //   { name: 'author', content: 'LomTech' },
-  //   {
-  //     type: 'application/ld+json',
-  //     content: JSON.stringify({
-  //       "@context": "https://schema.org",
-  //       "@type": "Organization",
-  //       "name": "LomTech",
-  //       "url": "https://new-fe.lomtech.net/",
-  //       "logo": "https://new-fe.lomtech.net/static/media/logo.8089a53b183884681218.png",
-  //       "sameAs": [
-  //         "https://www.facebook.com/LomTech",
-  //         "https://www.linkedin.com/company/lomtech",
-  //         "https://www.linkedin.com/company/lom-tech-global/posts/?feedView=all"
-  //       ],
-  //       "contactPoint": {
-  //         "@type": "ContactPoint",
-  //         "telephone": "+82-02-336-6777",
-  //         "contactType": "Customer Service",
-  //         "areaServed": "Worldwide",
-  //         "availableLanguage": "English,Korean"
-  //       }
-  //     })
-  //   },
-  // ]
 };

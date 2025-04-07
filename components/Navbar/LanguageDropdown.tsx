@@ -41,9 +41,12 @@ export const LanguageDropdown = () => {
     <div className="relative inline-block text-left" ref={dropdownRef}>
       <div>
         <button
+
+
+          aria-expanded={isOpen ? "true" : "false"}
           onClick={toggleDropdown}
           onKeyDown={handleKeyDown}
-          aria-expanded={isOpen}
+          // Remove duplicate aria-expanded attribute since it's already defined above
           aria-haspopup="menu"
           aria-controls="language-dropdown-menu"
           aria-label="change language"
@@ -54,7 +57,7 @@ export const LanguageDropdown = () => {
       </div>
 
       {isOpen && (
-        <div
+        <div role="menu"
           id="language-dropdown-menu"
           className="absolute right-0 z-10 mt-2 w-40 origin-top-right rounded-md bg-white shadow-lg"
           aria-labelledby="language-dropdown"

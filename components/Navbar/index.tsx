@@ -1,7 +1,6 @@
 "use client";
 
 import { FC, useEffect, useState, useRef } from "react";
-import { usePathname, useRouter } from "next/navigation";
 import { LanguageDropdown } from "./LanguageDropdown";
 import "@/app/NavBar.css";
 import { Language } from "@/lib/i18n/settings";
@@ -16,8 +15,6 @@ interface Props {
 export const NavBar: FC<Props> = ({ lng }) => {
   const { t } = useTranslation(lng, "common");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const pathname = usePathname();
-  const router = useRouter();
 
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
@@ -55,7 +52,8 @@ export const NavBar: FC<Props> = ({ lng }) => {
     <>
       <nav className="fixed z-50 w-full bg-black backdrop-blur-sm transition-transform duration-300">
         <div className="flex h-20 max-w-full items-center justify-between px-4">
-          <button 
+          <button
+            title="Toggle menu"
             onClick={handleMenuToggle}
             className="md:hidden text-white"
           >
@@ -64,7 +62,7 @@ export const NavBar: FC<Props> = ({ lng }) => {
 
           <div className="hidden flex-grow items-center justify-center md:flex">
             <button
-              onClick={() => scrollToSection("contact")}
+              onClick={() => scrollToSection("aboutme")}
               className="nav-link nav-link-custom"
             >
               {t("aboutMe")}
@@ -94,7 +92,7 @@ export const NavBar: FC<Props> = ({ lng }) => {
         {isMenuOpen && (
           <div ref={menuRef} className="absolute w-full bg-black py-4 md:hidden">
             <button
-              onClick={() => scrollToSection("contact")}
+              onClick={() => scrollToSection("aboutme")}
               className="block w-full px-4 py-2 text-left text-white hover:bg-gray-800"
             >
               {t("aboutMe")}
